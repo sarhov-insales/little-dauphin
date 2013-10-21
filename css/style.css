@@ -19,3 +19,24 @@ body.malish{
 body.vzsl{
 	background: #c3f37f url('../images/bg-vzsl.png') 0 0 repeat;
 }
+
+.g-outer{
+	width: 100%;
+}
+
+.g-inner{
+	width:100%;
+	margin: 0 auto;
+	max-width: 980px;
+}
+
+.site-name{
+	width: 240px;
+	margin: 0;
+}
+
+.header-wrap{
+	height: 100px;
+	background: #fff;
+	padding-left: 240px;
+}
