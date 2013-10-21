@@ -1,6 +1,7 @@
 body{
 	 font-family: 'Roboto Slab', serif;
 	 font-size: 100%;
+	 color: #62486e;
 	background: #d2bbe4 url('../images/bg-gl.png') 0 0 repeat;
 }
 
@@ -20,23 +21,43 @@ body.vzsl{
 	background: #c3f37f url('../images/bg-vzsl.png') 0 0 repeat;
 }
 
-.g-outer{
-	width: 100%;
-}
 
-.g-inner{
-	width:100%;
-	margin: 0 auto;
-	max-width: 980px;
-}
+/* main header */
 
 .site-name{
 	width: 240px;
 	margin: 0;
+	left: 0;
+	top: 30px;
 }
 
 .header-wrap{
 	height: 100px;
 	background: #fff;
-	padding-left: 240px;
 }
+
+.m-head{
+	padding-left: 240px;
+	padding-right: 40px;
+}
+
+.cart-wrap{
+	position: absolute;
+	right: 0;
+	top: 30px;
+	width: 41px;
+	height: 43px;
+	background: transparent url('../images/cart-bg.png') center center no-repeat;
+}
+
+.cart{
+	width: 100%;
+	height: 100%;
+	display: block;
+	font-size: 8px;
+	text-align: center;
+	padding-top: 3px;
+	color: #f9e66d;
+}
+
+/*END main header*/
