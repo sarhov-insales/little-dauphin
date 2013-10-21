@@ -1,5 +1,21 @@
 body{
 	 font-family: 'Roboto Slab', serif;
 	 font-size: 100%;
-	background: #ffaab7 url('../images/bg.png') 0 0 repeat;
+	background: #d2bbe4 url('../images/bg-gl.png') 0 0 repeat;
+}
+
+body.dev{
+	background: #ffaab7 url('../images/bg-dev.png') 0 0 repeat;
+}
+
+body.mal{
+	background: #b4e8ff url('../images/bg-mal.png') 0 0 repeat;
+}
+
+body.malish{
+	background: #ffed78 url('../images/bg-malish.png') 0 0 repeat;
+}
+
+body.vzsl{
+	background: #c3f37f url('../images/bg-vzsl.png') 0 0 repeat;
 }
