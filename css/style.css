@@ -28,7 +28,7 @@ body.vzsl{
 	width: 240px;
 	margin: 0;
 	left: 0;
-	top: 30px;
+	top: 10px;
 }
 
 .header-wrap{
@@ -37,7 +37,7 @@ body.vzsl{
 }
 
 .m-head{
-	padding: 30px 70px 30px 260px;
+	padding: 25px 70px 30px 260px;
 	font-weight: 500;
 }
 
@@ -56,7 +56,7 @@ body.vzsl{
 .cart-wrap{
 	position: absolute;
 	right: 0;
-	top: 30px;
+	top: 25px;
 	width: 41px;
 	height: 43px;
 	background: transparent url('../images/cart-bg.png') center center no-repeat;
@@ -88,4 +88,62 @@ body.vzsl{
 	margin-left: 16px;
 }
 
+.search-wrap{
+	top: 120px;
+	right: 0;
+	padding: 4px 13px 5px;
+	border-radius:17px;
+	background: #fff;
+	height: 33px;
+	width: 235px;
+	color: #62486e;
+}
+
+.search-input-wrap input{
+	height: 100%;
+	width: 196px;
+	border: none;
+	background: none;
+	padding: 0;
+	color: #62486e;
+	vertical-align: baseline;
+	font-weight: bold;
+}
+
+.search-submit{
+	border: none;
+	background: transparent url('../images/search-icon.png') center center no-repeat;
+	width: 10px;
+	height:10px;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
 /*END main header*/
+
+/*the cat blocks*/
+
+.cat-blocks{
+	margin-top: 190px;
+}
+
+.cat-blocks-item{
+	width: 240px;
+	height: 280px;
+	background: transparent url('../images/cat-bg.png') center top no-repeat;
+	float: left;
+	margin-left: 5px;
+}
+
+.cat-blocks-item:first-child{
+	margin-left: 0;
+}
+
+.cat-blocks-item.last{
+	background: transparent url('../images/cat-bg-last.png') center center no-repeat;
+	width: 540px;
+	height: 90px;
+	clear:both;
+	margin:30px auto;
+	float: none;
+}

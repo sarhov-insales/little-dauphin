@@ -19,6 +19,9 @@ a{
   text-decoration: none;
   color: #62486e;
 }
+a:hover{
+  color: #93819C;
+}
 
 .g-outer{
   width: 100%;
