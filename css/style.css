@@ -1,7 +1,7 @@
 body{
 	 font-family: 'Roboto Slab', serif;
 	 font-size: 100%;
-	 color: #62486e;
+	 color: #93849a;
 	background: #d2bbe4 url('../images/bg-gl.png') 0 0 repeat;
 }
 
@@ -37,8 +37,20 @@ body.vzsl{
 }
 
 .m-head{
-	padding-left: 240px;
-	padding-right: 40px;
+	padding: 30px 70px 30px 260px;
+	font-weight: 500;
+}
+
+.phone-wrap{
+	font-size: 16px;
+}
+
+.top-menu{
+	font-size: 13px;
+}
+
+.top-menu-url:not(:first-child){
+	margin-left: 20px;
 }
 
 .cart-wrap{
@@ -58,6 +70,22 @@ body.vzsl{
 	text-align: center;
 	padding-top: 3px;
 	color: #f9e66d;
+}
+
+.categories{
+	list-style: none;
+	margin: 0;
+	font-size: 14px;
+	padding: 10px 0 0 0;
+}
+
+.categories-item{
+	float:left;
+	display: inline-block;
+}
+
+.categories-item:not(:first-child){
+	margin-left: 16px;
 }
 
 /*END main header*/
