@@ -1,0 +1,23 @@
+@media screen and (max-width:980px) {
+
+	.g-inner{
+		width: 880px;
+	}
+
+	.site-name{
+		width: 140px;
+	}
+
+	.m-head{
+		padding-left: 160px;
+	}
+
+	.cat-blocks{
+		margin-top: 120px;
+	}
+
+	.cat-blocks-item{
+		margin: 40px !important;
+	}
+
+}

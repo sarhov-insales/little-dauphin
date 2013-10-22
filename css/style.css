@@ -38,6 +38,11 @@ body.vzsl{
 	margin: 0;
 	left: 0;
 	top: 10px;
+	-webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	-ms-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	transition: all 0.4s;
 }
 
 .header-wrap{
@@ -48,6 +53,11 @@ body.vzsl{
 .m-head{
 	padding: 25px 70px 30px 260px;
 	font-family: 'museo_500', sans-serif;
+	-webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	-ms-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	transition: all 0.4s;
 }
 
 .phone-wrap{
@@ -100,8 +110,9 @@ body.vzsl{
 }
 
 .categories-item{
-	margin-left: 15px;
+	margin-left: 14px;
 }
+
 
 .categories-item:first-child{
 	margin-left: 0;
@@ -144,17 +155,24 @@ body.vzsl{
 
 .cat-blocks{
 	margin-top: 190px;
+	text-align: center;
+	-webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	-ms-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	transition: all 0.4s;
 }
 
 .cat-blocks-item{
-	width: 235px;
+	width: 230px;
 	height: 280px;
 	background: transparent url('../images/cat-bg.png') center top no-repeat;
-	float: left;
+	display: inline-block;
 	margin-left: 13px;
 	margin-bottom: 60px;
 	font-size: 23px;
 	font-family: 'museo_700', sans-serif;
+
 }
 
 .cat-blocks-item:hover a{
@@ -165,6 +183,7 @@ body.vzsl{
 	display: block;
 	text-align: center;
 	height: 255px;
+
 }
 
 .cat-blocks-item img{
@@ -195,6 +214,11 @@ body.vzsl{
 .cat-blocks-item-title{
 	display: block;
 	text-align: center;
+		-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
 }
 
 .cat-blocks-item.last{
@@ -202,17 +226,18 @@ body.vzsl{
 	width: 540px;
 	height: 90px;
 	clear:both;
-	margin-right: auto;
-	margin-left: auto;
+	margin-right: auto !important;
+	margin-left: auto !important;
 	float: none;
 	padding-top: 30px;
+	display: block;
 }
 
 .cat-blocks-item.last a:before, .cat-blocks-item.last a:after{
 	content:'';
 	display: inline-block;
 	vertical-align: middle;
-	border-bottom:0.1em dotted #7F6A89;
+	border-bottom:2px dotted #7F6A89;
 	height: 1px;
 	width: 50px;
 	margin: 0 10px;
@@ -233,7 +258,11 @@ body.vzsl{
 
 .m-foot{
 	padding: 30px 0;
-	border-bottom:0.1em dotted #7F6A89;
+	border-bottom:2px dotted #7F6A89;
+}
+
+.phone-footer, .copyright{
+	padding-top: 15px;
 }
 
 .soc-block{
@@ -247,12 +276,41 @@ body.vzsl{
 	margin-left: 2px;
 	overflow: hidden;
 	text-indent: -9999px;
-	background: #000;
+	background: transparent;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.soc-item-url:hover{
+	opacity: 0.7;
+}
+
+.soc-item-url.email{
+	background: transparent url('../images/mail.png') center center no-repeat;
+}
+
+.soc-item-url.youtube{
+	background: transparent url('../images/youtube.png') center center no-repeat;
+}
+
+.soc-item-url.twitter{
+	background: transparent url('../images/twitter.png') center center no-repeat;
+}
+
+.soc-item-url.facebook{
+	background: transparent url('../images/facebook.png') center center no-repeat;
+
+}
+
+.soc-item-url.vkontakte{
+	background: transparent url('../images/vkontakte.png') center center no-repeat;
 }
 
 .copyright{
 	font: 14px 'museo_500', sans-serif;
-
 }
 
 /*END m-foot*/
