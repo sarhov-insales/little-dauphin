@@ -31,12 +31,16 @@ a:hover{
   width:100%;
   margin: 0 auto;
   max-width: 980px;
+  width: 980px;
 }
 
 img{
   max-width: 100%;
   height: auto;
+  border : 0;
 }
+
+a img {outline : none;}
 
 .fl{
   float:left;

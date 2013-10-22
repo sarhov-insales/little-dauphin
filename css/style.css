@@ -84,8 +84,12 @@ body.vzsl{
 	display: inline-block;
 }
 
-.categories-item:not(:first-child){
-	margin-left: 16px;
+.categories-item{
+	margin-left: 14px;
+}
+
+.categories-item:first-child{
+	margin-left: 0;
 }
 
 .search-wrap{
@@ -101,7 +105,7 @@ body.vzsl{
 
 .search-input-wrap input{
 	height: 100%;
-	width: 196px;
+	width: 192px;
 	border: none;
 	background: none;
 	padding: 0;
@@ -128,15 +132,53 @@ body.vzsl{
 }
 
 .cat-blocks-item{
-	width: 240px;
+	width: 235px;
 	height: 280px;
 	background: transparent url('../images/cat-bg.png') center top no-repeat;
 	float: left;
-	margin-left: 5px;
+	margin-left: 13px;
+	margin-bottom: 60px;
+	font-size: 23px;
+}
+
+.cat-blocks-item:hover a{
+	color: #93819C;
+}
+
+.cat-blocks-item-url{
+	display: block;
+	text-align: center;
+	height: 255px;
+}
+
+.cat-blocks-item img{
+	position: absolute;
+	max-width: 300%;
+}
+
+.cat-blocks-item.first img{
+	left:0; top:0
+}
+
+.cat-blocks-item.second img{
+	left:2px; top:-41px
+}
+
+.cat-blocks-item.third img{
+	left:44px; top:-50px;
+}
+
+.cat-blocks-item.fourth img{
+	left:2px; top:0px;
 }
 
 .cat-blocks-item:first-child{
 	margin-left: 0;
+}
+
+.cat-blocks-item-title{
+	display: block;
+	text-align: center;
 }
 
 .cat-blocks-item.last{
@@ -144,6 +186,19 @@ body.vzsl{
 	width: 540px;
 	height: 90px;
 	clear:both;
-	margin:30px auto;
+	margin-right: auto;
+	margin-left: auto;
 	float: none;
+	padding-top: 28px;
 }
+
+.cat-blocks-item.last a:before, .cat-blocks-item.last a:after{
+	content:'';
+	display: inline-block;
+	vertical-align: middle;
+	border-bottom:1px dotted #7f6a89;
+	height: 1px;
+	width: 50px;
+	margin: 0 10px;
+}
+
