@@ -1,5 +1,5 @@
 body{
-	 font-family: 'Roboto Slab', serif;
+	 font-family: 'museo_700', serif;
 	 font-size: 100%;
 	 color: #93849a;
 	background: #d2bbe4 url('../images/bg-gl.png') 0 0 repeat;
@@ -20,6 +20,8 @@ body.malish{
 body.vzsl{
 	background: #c3f37f url('../images/bg-vzsl.png') 0 0 repeat;
 }
+
+
 
 
 /* main header */
@@ -202,3 +204,14 @@ body.vzsl{
 	margin: 0 10px;
 }
 
+-webkit-transition: all 0.4s;
+-moz-transition: all 0.4s;
+-ms-transition: all 0.4s;
+-o-transition: all 0.4s;
+transition: all 0.4s;
+
+-webkit-transform: rotate(-85deg);
+-moz-transform: rotate(-85deg);
+-ms-transform: rotate(-85deg);
+-o-transform: rotate(-85deg);
+transform: rotate(-85deg);
