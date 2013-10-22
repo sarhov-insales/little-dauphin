@@ -1,8 +1,15 @@
+html{
+	height: 101%;
+}
+
 body{
-	 font-family: 'museo_700', serif;
+	 font-family: 'museo_sans_500', sans-serif;
 	 font-size: 100%;
+	 min-height: 100%;
+	
 	 color: #93849a;
 	background: #d2bbe4 url('../images/bg-gl.png') 0 0 repeat;
+	padding-bottom: 260px;
 }
 
 body.dev{
@@ -40,7 +47,7 @@ body.vzsl{
 
 .m-head{
 	padding: 25px 70px 30px 260px;
-	font-weight: 500;
+	font-family: 'museo_500', sans-serif;
 }
 
 .phone-wrap{
@@ -48,7 +55,12 @@ body.vzsl{
 }
 
 .top-menu{
-	font-size: 13px;
+	font-size: 13px;	
+}
+
+.top-menu-url{
+	color: #62486e;
+	text-shadow: 0 0 1px #bbb3bf;
 }
 
 .top-menu-url:not(:first-child){
@@ -77,8 +89,9 @@ body.vzsl{
 .categories{
 	list-style: none;
 	margin: 0;
-	font-size: 14px;
+	font-size: 15px;
 	padding: 10px 0 0 0;
+	font-family: 'museo_700', sans-serif;
 }
 
 .categories-item{
@@ -87,7 +100,7 @@ body.vzsl{
 }
 
 .categories-item{
-	margin-left: 14px;
+	margin-left: 15px;
 }
 
 .categories-item:first-child{
@@ -141,6 +154,7 @@ body.vzsl{
 	margin-left: 13px;
 	margin-bottom: 60px;
 	font-size: 23px;
+	font-family: 'museo_700', sans-serif;
 }
 
 .cat-blocks-item:hover a{
@@ -191,27 +205,54 @@ body.vzsl{
 	margin-right: auto;
 	margin-left: auto;
 	float: none;
-	padding-top: 28px;
+	padding-top: 30px;
 }
 
 .cat-blocks-item.last a:before, .cat-blocks-item.last a:after{
 	content:'';
 	display: inline-block;
 	vertical-align: middle;
-	border-bottom:1px dotted #7f6a89;
+	border-bottom:0.1em dotted #7F6A89;
 	height: 1px;
 	width: 50px;
 	margin: 0 10px;
 }
 
--webkit-transition: all 0.4s;
--moz-transition: all 0.4s;
--ms-transition: all 0.4s;
--o-transition: all 0.4s;
-transition: all 0.4s;
+/*END cat blocks*/
 
--webkit-transform: rotate(-85deg);
--moz-transform: rotate(-85deg);
--ms-transform: rotate(-85deg);
--o-transform: rotate(-85deg);
-transform: rotate(-85deg);
+/*m-foot*/
+
+.footer-wrap{
+	background: #fff;
+	height: 200px;
+	position: absolute;
+	bottom: 0;
+	letter-spacing: 0;
+	font-family: 'museo_700', sans-serif;
+}
+
+.m-foot{
+	padding: 30px 0;
+	border-bottom:0.1em dotted #7F6A89;
+}
+
+.soc-block{
+	margin-left: 40px;
+}
+
+.soc-item-url{
+	width: 40px;
+	height: 40px;
+	float: left;
+	margin-left: 2px;
+	overflow: hidden;
+	text-indent: -9999px;
+	background: #000;
+}
+
+.copyright{
+	font: 14px 'museo_500', sans-serif;
+
+}
+
+/*END m-foot*/
