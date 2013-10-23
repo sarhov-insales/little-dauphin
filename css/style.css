@@ -59,7 +59,7 @@ h1, h2, h3, h4, h5, h6{
 	font-family: 'museo_sans_500', sans-serif;
 	-webkit-transition: all 0.4s;
 	-moz-transition: all 0.4s;
-	-ms-transition: all 0.4s;
+-ms-transition: all 0.4s;
 	-o-transition: all 0.4s;
 	transition: all 0.4s;
 }
@@ -335,7 +335,7 @@ h1, h2, h3, h4, h5, h6{
 .section-inner{
 	height: 100%;
 	background: #fff;
-	padding: 23px;
+	padding: 20px;
 }	
 
 .section-inner:before{
@@ -376,8 +376,9 @@ h1, h2, h3, h4, h5, h6{
 
 .sidebarbox{
 	width: 220px;
-	padding: 30px 9px;
-	border:2px dotted #795693;
+	padding: 30px 12px;
+	background:url('../images/sidebar-bg.png') left top repeat-y, 
+	url('../images/sidebar-bg.png') right top repeat-y;
 	position: relative;
 	border-radius:2px;
 	margin-bottom: 70px;
@@ -389,7 +390,7 @@ h1, h2, h3, h4, h5, h6{
 	height: 23px;
 	background: transparent url('../images/sidebarbox-bottom-bg.png') center center  no-repeat;
 	position: absolute;
-	bottom: -15px;
+	bottom: -16px;
 	left: 0;
 	content:'';
 	display: block;
@@ -400,7 +401,7 @@ h1, h2, h3, h4, h5, h6{
 	height: 23px;
 	background: transparent url('../images/sidebarbox-top-bg.png') center center  no-repeat;
 	position: absolute;
-	top: -20px;
+	top: -17px;
 	content:'';
 	left: 0;
 	display: block;
@@ -480,7 +481,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .content{
-	width: 690px;
+	width: 760px;
 }
 
 .sorting-wrap{
@@ -490,8 +491,6 @@ h1, h2, h3, h4, h5, h6{
 	font-family: 'museo_sans_500', sans-serif;
 	color: #62486e;
 }
-
-
 
 .page-part-url{
 	width: 30px;
@@ -507,3 +506,31 @@ h1, h2, h3, h4, h5, h6{
 	color: #62486e;
 	background: #ffed78;
 }
+
+.grid-items{
+	margin-top: 50px;
+}
+
+.grid-item{
+	width: 190px;
+	padding: 10px;
+	display: inline-block;
+	margin-bottom: 40px;
+	float: left;
+	position: relative;
+	padding-bottom: 120px;
+		background: #fff url('../images/grid-item-bg.png') center -500px no-repeat;
+}
+
+.grid-item:hover{
+	background-color: none;
+	background-position: center top;
+}
+
+
+.grid-item-title-url{
+	color: #969595;
+	font-size: 15px;
+	font-family: 'museo_sans_500', sans-serif;
+}
+
