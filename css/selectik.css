@@ -102,6 +102,10 @@
 	background-color:	#14609e;
 	
 	}
+
+	.select-list ul {
+		min-width:230px;
+	}
 .select-list.custom-scroll{
 	padding:			6px;
 	}
