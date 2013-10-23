@@ -6,7 +6,7 @@ body{
 	 font-family: 'museo_sans_500', sans-serif;
 	 font-size: 100%;
 	 min-height: 100%;
-	 color: #93849a;
+	 color: #62486e;
 	background: #d2bbe4 url('../images/bg-gl.png') 0 0 repeat;
 	padding-bottom: 260px;
 }
@@ -72,8 +72,8 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .top-menu-url{
-	color: #62486e;
-	text-shadow: 0 0 1px #bbb3bf;
+	color: #93849a;
+
 }
 
 .top-menu-url:not(:first-child){
@@ -320,6 +320,7 @@ h1, h2, h3, h4, h5, h6{
 
 .copyright{
 	font: 14px 'museo_500', sans-serif;
+	color: #93849a;
 }
 
 /*END m-foot*/
@@ -443,6 +444,10 @@ h1, h2, h3, h4, h5, h6{
 	margin-bottom: 20px;
 }
 
+.price-filtering{
+	margin-top: 20px;
+}
+
 .ui-slider-horizontal{
 	background: #fff8ce;
 	height: 7px;
@@ -470,4 +475,31 @@ h1, h2, h3, h4, h5, h6{
 
 .price-range{
 	margin-top: 10px;
+}
+
+.content{
+	width: 690px;
+}
+
+.sorting-wrap{
+	margin-top: 40px;
+	width: 100%;
+	font-size: 13px;
+	font-family: 'museo_sans_700', sans-serif;
+	color: #62486e;
+}
+
+.page-part-url{
+	width: 30px;
+	height: 30px;
+	float: left;
+	margin-left: 2px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 30px;
+}
+
+.page-part-url.active, .page-part-url:hover{
+	color: #62486e;
+	background: #ffed78;
 }
