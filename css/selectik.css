@@ -79,16 +79,17 @@
 	border-radius:15px;
 	background: #FFED78;		
 	}
-.custom-select .custom-text:after{
-	font-size:			13px;
+.custom-select .custom-text:before{
 	position:			relative;
-	top:				-6px;
-	right:				12px;
 	display:			block;
-	content:			'̬';
+	content:			'';
+	height: 6px;
 	float: 				right;
 	width:				6px;
 	z-index: 			2;
+	right: 12px;
+	top: 12px;
+	background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAADCAYAAACwAX77AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABZ0RVh0Q3JlYXRpb24gVGltZQAxMC8yMy8xMzoQe4sAAAAcdEVYdFNvZnR3YXJlAEFkb2JlIEZpcmV3b3JrcyBDUzbovLKMAAAALElEQVQImVXJsRUAEADE0M8znDkMYAVnc42CdEnK6DNYfnZFsN+ItCt5RuAAAvEFoqsiwTcAAAAASUVORK5CYII=) center center no-repeat;
 	}
 .custom-select span.custom-text:hover,
 .active span.custom-text{
