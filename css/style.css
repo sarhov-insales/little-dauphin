@@ -6,7 +6,6 @@ body{
 	 font-family: 'museo_sans_500', sans-serif;
 	 font-size: 100%;
 	 min-height: 100%;
-	
 	 color: #93849a;
 	background: #d2bbe4 url('../images/bg-gl.png') 0 0 repeat;
 	padding-bottom: 260px;
@@ -29,7 +28,11 @@ body.vzsl{
 }
 
 
-
+h1, h2, h3, h4, h5, h6{
+	font-family: 'museo_700', sans-serif !important;
+	font-weight: normal;
+	margin: 0;
+}
 
 /* main header */
 
@@ -119,9 +122,9 @@ body.vzsl{
 }
 
 .search-wrap{
-	top: 120px;
+	top: 140px;
 	right: 0;
-	padding: 4px 13px 5px;
+	padding: 5px 13px;
 	border-radius:17px;
 	background: #fff;
 	height: 33px;
@@ -129,9 +132,15 @@ body.vzsl{
 	color: #62486e;
 }
 
+.search-input-wrap{
+	width: 190px;
+	position: relative;
+	top: 1px;
+}
+
 .search-input-wrap input{
 	height: 100%;
-	width: 192px;
+	width: 100%;
 	border: none;
 	background: none;
 	padding: 0;
@@ -314,3 +323,77 @@ body.vzsl{
 }
 
 /*END m-foot*/
+
+.section{
+	margin-top: 100px;
+	background: transparent;
+	height: 800px;
+	padding: 0 0 40px 0;
+	border-top:2px dotted #7F6A89;
+}
+
+.section-inner{
+	height: 100%;
+	background: #fff;
+	padding: 23px;
+}	
+
+.section-inner:before{
+	width: 100%;
+	height: 33px;
+	left: 0;
+	background: transparent url('../images/section-top-bg.png') center center  no-repeat;
+	position: absolute;
+	top: -24px;
+	content:'';
+}
+
+.section-inner:after{
+	width: 100%;
+	height: 33px;
+	background: transparent url('../images/section-bottom-bg.png') center center  no-repeat;
+	position: absolute;
+	bottom: -24px;
+	content:'';
+	left: 0;
+}
+
+.section + .footer-wrap{
+	background: none;
+}
+
+
+.page-title{
+	color: #62486e;
+	font-size: 30px;
+	display: block;
+	width: 100%;
+	margin: 15px auto 30px;
+	text-align: center;
+}
+
+.sidebarbox{
+	width: 220px;
+	height: 500px;
+	border:2px dotted #795693;
+	margin:15px;
+	position: relative;
+}
+
+.sidebarbox:after{
+	width: 100%;
+	height: 23px;
+	background: transparent url('../images/sidebarbox-bottom-bg.png') center center  no-repeat;
+	position: absolute;
+	bottom: -15px;
+	content:'';
+}
+
+.sidebarbox:before{
+	width: 100%;
+	height: 23px;
+	background: transparent url('../images/sidebarbox-top-bg.png') center center  no-repeat;
+	position: absolute;
+	top: -20px;
+	content:'';
+}
