@@ -378,7 +378,7 @@ h1, h2, h3, h4, h5, h6{
 	border:2px dotted #795693;
 	position: relative;
 	border-radius:2px;
-	margin-bottom: 80px;
+	margin-bottom: 70px;
 	margin-top: 20px;
 }
 
@@ -437,6 +437,10 @@ h1, h2, h3, h4, h5, h6{
 
 .filters{
 	margin-bottom: 40px;
+}
+
+.filters:last-of-type{
+	margin-bottom: 20px;
 }
 
 .ui-slider-horizontal{
