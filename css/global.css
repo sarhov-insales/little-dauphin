@@ -69,6 +69,24 @@ a img {outline : none;}
   clear: right;
 }
 
+.button{
+  background: #300151;
+  border: none;
+  text-align: center;
+  display: inline-block;
+  padding: 6px 40px;
+  color: #fff;
+  font-family: 'museo_sans_500', sans-serif;
+  font-size: 16px;
+  text-transform: capitalize;
+  cursor: pointer;
+  border-radius:15px;
+}
+
+.button:hover{
+  background: #431B60;
+}
+
 input:focus,
 select:focus,
 textarea:focus,

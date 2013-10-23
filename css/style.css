@@ -530,11 +530,37 @@ h1, h2, h3, h4, h5, h6{
 
 .grid-item-title{
 	min-height: 43px;
+	margin-bottom: 10px;
 }
 
 .grid-item-title-url{
 	color: #969595;
 	font-size: 15px;
 	font-family: 'museo_sans_500', sans-serif;
+}
+
+.pricezone{
+	font-family: 'museo_sans_cyrl700', sans-serif;
+	font-size: 24px;
+}
+
+.cartzone{
+	text-align: center;
+	display: none;
+}
+
+.cartzone-button{
+	position: relative;
+	top: -30px;
+	margin:0 auto;
+	
+}
+
+.grid-item:hover > .cartzone{
+	display: block;
+}
+
+.grid-item:hover > .pricezone{
+	visibility: hidden;
 }
 
