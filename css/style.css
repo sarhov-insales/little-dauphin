@@ -513,6 +513,7 @@ h1, h2, h3, h4, h5, h6{
 
 .grid-item{
 	width: 190px;
+	height: 325px;
 	padding: 10px;
 	display: inline-block;
 	margin-bottom: 40px;
@@ -527,6 +528,9 @@ h1, h2, h3, h4, h5, h6{
 	background-position: center top;
 }
 
+.grid-item-title{
+	min-height: 43px;
+}
 
 .grid-item-title-url{
 	color: #969595;

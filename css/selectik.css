@@ -97,7 +97,7 @@
 	color: #62486e;	
 	}
 .select-list{
-	top:				34px;
+	top:				24px;
 	line-height:		25px;
 	padding:			0 0 0 10px;
 	background-color:	#14609e;
@@ -108,10 +108,11 @@
 		min-width:230px;
 	}
 .select-list.custom-scroll{
-	padding:			6px;
+	padding:			0;
 	}
 
-	.custom-select li{border-radius:15px; padding: 2px 6px;margin-bottom: 1px;}
+	.custom-select li{padding: 2px 6px;margin-bottom: 1px;}
+	.custom-select li:last-child{margin-bottom: 0;}
 .select-list .selected,
 .select-list li:hover{
 	color:				color: #62486e;
@@ -136,6 +137,7 @@
 	-moz-border-radius: 2px;
 	border-radius: 		2px; 
 	}
+
 .maxlength .scroll-drag:after{
 	display:			block;
 	content:			'≡';
@@ -159,24 +161,29 @@
 }
 
 .select-list{
+	background: none;
+}
 
-	padding: 10px;
-	border:2px dotted #795693;
-	background: #fff;
-	border-radius:2px;
+.select-list:before{
+	content:'';
+	display: block;
+	width: 0;
+	height: 0;
+	position: absolute;
+	top: 0px;
+	left: 20px;
+	border-width: 10px;
+	border-style: solid;
+	border-color: transparent transparent #FFED78 transparent;
+}
+
+.select-list ul{
+	border:3px solid #FFED78;
+	padding: 0;
+	background: #ddd;
+	overflow: hidden;
+	border-radius:15px;
 	margin-bottom: 70px;
 	margin-top: 20px;
 
-}
-
-
-.select-list:before{
-	width: 100%;
-	height: 23px;
-	background: transparent url('../images/sidebarbox-top-bg.png') center center  no-repeat;
-	position: absolute;
-	top: -21px;
-	content:'';
-	left: 0;
-	display: block;
 }
