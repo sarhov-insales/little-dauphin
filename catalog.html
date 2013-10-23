@@ -12,6 +12,7 @@
 <![endif]-->
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/jquery-ui.min.css">
+  <link rel="stylesheet" href="css/selectik.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="fonts.css">
   <link rel="stylesheet" href="css/media.css">
@@ -21,6 +22,7 @@
   <script>window.jQuery || document.write('<script src="js/libs/jquery.min.js"><\/script>')</script>
   <script src="js/libs/modernizr.min.js"></script>
   <script src="js/libs/jquery-ui.min.js"></script>
+  <script src="js/libs/jquery.selectik.min.js"></script>
 </head>
 <body class="rel">
 
@@ -203,7 +205,21 @@
       <h1 class="section-title sidebatbox-title-in"></h1>
       <div class="sorting-wrap cf">
         <div class="sorting fl">
-          Сортировать по:
+          Сортировать по   
+          <select class="buttons sorting" onchange="$('#order_form').submit();" name="order">
+           
+            <option value="price">По возрастанию цены</option>
+            <option value="descending_price">По убыванию цены</option>
+            <option value="title">Алфавиту А-Я</option>
+            <option value="descending_title">Алфавиту Я-А</option>
+            <option value="age">Дате добавления Новые-Старые</option>
+            <option value="descending_age">Дате добавления Старые-Новые</option>
+        </select>
+        <script>
+          $(document).ready(function(){
+            $('select').selectik();
+            });
+        </script>
         </div>  <!-- sorting -->
 
         <div class="pagination fr">

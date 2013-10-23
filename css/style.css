@@ -425,6 +425,7 @@ h1, h2, h3, h4, h5, h6{
 	display: block;
 	padding: 5px 9px;
 	border-radius: 25px;
+	margin-bottom: 2px;
 }
 
 .sub-catalog-item-url{
@@ -488,6 +489,8 @@ h1, h2, h3, h4, h5, h6{
 	font-family: 'museo_sans_700', sans-serif;
 	color: #62486e;
 }
+
+
 
 .page-part-url{
 	width: 30px;
