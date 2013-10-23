@@ -327,8 +327,6 @@ h1, h2, h3, h4, h5, h6{
 .section{
 	margin-top: 100px;
 	background: transparent;
-	height: 800px;
-	padding: 0 0 40px 0;
 	border-top:2px dotted #7F6A89;
 }
 
@@ -376,9 +374,10 @@ h1, h2, h3, h4, h5, h6{
 	width: 220px;
 	padding: 30px 9px;
 	border:2px dotted #795693;
-	margin:15px;
 	position: relative;
 	border-radius:2px;
+	margin-bottom: 50px;
+	margin-top: 20px;
 }
 
 .sidebarbox:after{
