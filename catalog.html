@@ -11,6 +11,7 @@
 <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 <![endif]-->
   <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/jquery-ui.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="fonts.css">
   <link rel="stylesheet" href="css/media.css">
@@ -19,6 +20,7 @@
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/libs/jquery.min.js"><\/script>')</script>
   <script src="js/libs/modernizr.min.js"></script>
+  <script src="js/libs/jquery-ui.min.js"></script>
 </head>
 <body class="rel">
 
@@ -81,6 +83,7 @@
       <h2 class="sidebarbox-title sidebarbox-title-out">
         Каталог
       </h2>
+      
       <div class="sidebarbox">
         <nav class="catalog">
          
@@ -125,8 +128,78 @@
           </div>
           
         </nav>
-      </div>
-    </div>
+      </div> <!-- sidebarbox -->
+
+      <div class="sidebarbox">
+       <h3 class="sidebarbox-title sidebarbox-title-in">
+        Материал
+        </h3>
+        <div class="catalog filter-wrap filters">
+          <a href="#" class="catalog-item-url">Кожа</a>
+          <a href="#" class="catalog-item-url">Дерево</a>
+          <a href="#" class="catalog-item-url active">Пластик</a>
+          <a href="#" class="catalog-item-url">Стекло</a>
+          <a href="#" class="catalog-item-url">Металл</a>
+          <a href="#" class="catalog-item-url">Бумага</a>
+        </div>
+
+        <h3 class="sidebarbox-title sidebarbox-title-in">
+        Цвет
+        </h3>
+        <div class="catalog filter-wrap filters">
+          <a href="#" class="catalog-item-url">Синий</a>
+          <a href="#" class="catalog-item-url">Красный</a>
+          <a href="#" class="catalog-item-url">Бело-голубой</a>
+          <a href="#" class="catalog-item-url active">Оранжевый</a>
+          <a href="#" class="catalog-item-url">Металл</a>
+          <a href="#" class="catalog-item-url">Фиолетовый</a>
+        </div>
+
+        <h3 class="sidebarbox-title sidebarbox-title-in">
+        Цена
+        </h3>
+        <div class="catalog filter-wrap filters">
+            <div class="price-filter">
+              <div id="slider-range"></div>
+              <input type="hidden" name="price_min" id="min-price" value="100"/>
+              <input type="hidden" name="price_max" class="fr" id="max-price" value="5000" />
+              <div class="price-range cf"><span class="min-price fl"></span><span class="max-price fr"></span></div>
+            </div>
+        </div>
+
+
+          <script>
+          $(function() {                  
+          $( "#slider-range" ).slider({
+          range: true,
+          min: 100,
+                                    max: 5000,
+                                    values: [ 400, 6000 ],
+                                    slide: function( event, ui ) {
+          $('.min-price').text("от " + ui.values[ 0 ] + " р.");
+          $('.max-price').text(" до " + ui.values[ 1 ] + " р.");  
+          $('#min-price').val(ui.values[ 0 ]);
+          $('#max-price').val(ui.values[ 1 ]);       
+
+          },
+          stop: function( event, ui ) {
+            $('#characteristics').submit();
+          }
+          });
+
+          $('.min-price').text("от " + $( "#slider-range" ).slider( "values", 0 ) + " р.");
+          $('.max-price').text("  до " + $( "#slider-range" ).slider( "values", 1 ) + " р.");  
+          $('#min-price').val($( "#slider-range" ).slider( "values", 0 ));
+          $('#max-price').val($( "#slider-range" ).slider( "values", 1 ));          
+
+          });
+          </script> 
+
+
+      </div> <!-- sidebarbox -->
+
+
+    </div> <!-- sidebar -->
     <section class="content fr">
       
     </section> <!-- content -->

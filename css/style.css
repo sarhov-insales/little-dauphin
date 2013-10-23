@@ -344,6 +344,7 @@ h1, h2, h3, h4, h5, h6{
 	position: absolute;
 	top: -24px;
 	content:'';
+	display: block;
 }
 
 .section-inner:after{
@@ -354,6 +355,7 @@ h1, h2, h3, h4, h5, h6{
 	bottom: -24px;
 	content:'';
 	left: 0;
+	display: block;
 }
 
 .section + .footer-wrap{
@@ -376,7 +378,7 @@ h1, h2, h3, h4, h5, h6{
 	border:2px dotted #795693;
 	position: relative;
 	border-radius:2px;
-	margin-bottom: 50px;
+	margin-bottom: 80px;
 	margin-top: 20px;
 }
 
@@ -388,6 +390,7 @@ h1, h2, h3, h4, h5, h6{
 	bottom: -15px;
 	left: 0;
 	content:'';
+	display: block;
 }
 
 .sidebarbox:before{
@@ -398,12 +401,19 @@ h1, h2, h3, h4, h5, h6{
 	top: -21px;
 	content:'';
 	left: 0;
+	display: block;
 }
 
 .sidebarbox-title{
 	font-size: 20px;
 	color: #62486e;
 	text-align: center;
+}
+
+.sidebarbox-title-in{
+	text-align: left;
+	padding-left: 8px;
+	margin-bottom: 10px;
 }
 
 .catalog{
@@ -423,4 +433,37 @@ h1, h2, h3, h4, h5, h6{
 .catalog a:hover, .catalog a.active{
 	background: #ffed78;
 	color: #62486e;
+}
+
+.filters{
+	margin-bottom: 40px;
+}
+
+.ui-slider-horizontal{
+	background: #fff8ce;
+	height: 7px;
+	border-radius:5px;
+}
+
+.ui-slider-horizontal .ui-slider-range{
+	background: #ffed78;
+}
+
+.ui-slider .ui-slider-handle{
+	width: 15px;
+	height: 15px;
+	border-radius:50%;
+	background: #62486e;
+}
+
+.price-filter{
+	padding: 0 8px;
+}
+
+.ui-slider .ui-slider-handle:hover{
+	background: #62486e;
+}
+
+.price-range{
+	margin-top: 10px;
 }
