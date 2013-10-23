@@ -374,10 +374,11 @@ h1, h2, h3, h4, h5, h6{
 
 .sidebarbox{
 	width: 220px;
-	height: 500px;
+	padding: 30px 9px;
 	border:2px dotted #795693;
 	margin:15px;
 	position: relative;
+	border-radius:2px;
 }
 
 .sidebarbox:after{
@@ -386,6 +387,7 @@ h1, h2, h3, h4, h5, h6{
 	background: transparent url('../images/sidebarbox-bottom-bg.png') center center  no-repeat;
 	position: absolute;
 	bottom: -15px;
+	left: 0;
 	content:'';
 }
 
@@ -394,6 +396,32 @@ h1, h2, h3, h4, h5, h6{
 	height: 23px;
 	background: transparent url('../images/sidebarbox-top-bg.png') center center  no-repeat;
 	position: absolute;
-	top: -20px;
+	top: -21px;
 	content:'';
+	left: 0;
+}
+
+.sidebarbox-title{
+	font-size: 20px;
+	color: #62486e;
+	text-align: center;
+}
+
+.catalog{
+	font-size: 15px;
+}
+
+.catalog-item-url, .sub-catalog-item-url{
+	display: block;
+	padding: 5px 9px;
+	border-radius: 25px;
+}
+
+.sub-catalog-item-url{
+	padding-left: 40px;
+}
+
+.catalog a:hover, .catalog a.active{
+	background: #ffed78;
+	color: #62486e;
 }
