@@ -48,7 +48,7 @@
 	}
 .custom-select li{
 	cursor:				pointer;
-	min-height:			25px;
+	
 	}
 .select-scroll{
 	position:			absolute;
@@ -59,9 +59,7 @@
 .default-scroll ul{
 	overflow-y:			scroll
 	}
-.custom-scroll{
-	overflow:			hidden
-	}
+
 .scroll-drag{
 	display:			block;
 	position:			absolute;
@@ -94,30 +92,25 @@
 	}
 .custom-select span.custom-text:hover,
 .active span.custom-text{
-	background: #FFED78;	
+	background: #FFED78;
+	color: #62486e;	
 	}
 .select-list{
 	top:				34px;
 	line-height:		25px;
 	padding:			0 0 0 10px;
 	background-color:	#14609e;
-	color:				#bdd3e6;
-	text-shadow:		0 1px 1px #113870;
-	/* border styles */
-	-webkit-border-radius:2px;
-	-moz-border-radius: 2px;
-	border-radius: 		2px; 
-	/* Shadow styles */
-	-webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
-	-moz-box-shadow: 	0px 1px 2px 0px rgba(0, 0, 0, 0.3);
-	box-shadow: 		0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+	
 	}
 .select-list.custom-scroll{
-	padding:			2px 0 2px 10px;
+	padding:			6px;
 	}
+
+	.custom-select li{border-radius:15px; padding: 2px 6px;margin-bottom: 1px;}
 .select-list .selected,
 .select-list li:hover{
-	color:				#FFF
+	color:				color: #62486e;
+	background: #ffed78;
 	}
 .select-list li.disabled{
 	color:				#CCCCCC;
@@ -160,3 +153,25 @@
 	margin-left: 4px;
 }
 
+.select-list{
+
+	padding: 10px;
+	border:2px dotted #795693;
+	background: #fff;
+	border-radius:2px;
+	margin-bottom: 70px;
+	margin-top: 20px;
+
+}
+
+
+.select-list:before{
+	width: 100%;
+	height: 23px;
+	background: transparent url('../images/sidebarbox-top-bg.png') center center  no-repeat;
+	position: absolute;
+	top: -21px;
+	content:'';
+	left: 0;
+	display: block;
+}
