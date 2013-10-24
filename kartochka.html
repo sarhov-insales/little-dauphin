@@ -82,109 +82,322 @@
 </div> <!-- header-wrap -->
 
 <section class="section g-inner cf">
-  <h2 class="page-title" style="visibility:hidden;"> 
+  <h2 class="page-title">
     Игрушки для маленьких
   </h2>
-  <div class="section-inner rel cf item-page">
-    
-    <div class="item-wrap cf">
-      <section class="item-info fr">
-        <h1 class="item-title">
-          Пупс «Майя - Папайя», Yogurtinis
-        </h1>
+  <div class="section-inner rel cf">
+    <div class="sidebar fl">
+      <h2 class="sidebarbox-title sidebarbox-title-out">
+        Каталог
+      </h2>
+      
+      <div class="sidebarbox">
+        <nav class="catalog">
+         
+          <div class="catalog-item">
+          <a href="#" class="catalog-item-url">Для малышей</a>
+          <nav class="sub-catalog">
+            <div class="sub-catalog-item">
+              <a href="" class="sub-catalog-item-url">Игрушки</a>
+            </div>
+            <div class="sub-catalog-item">
+              <a href="" class="sub-catalog-item-url active">Мягкие игрушки</a>
+            </div>
+            <div class="sub-catalog-item">
+              <a href="" class="sub-catalog-item-url">Погремушки</a>
+            </div>
 
-        <div class="item-properties-wrap">
-          <table class="properties">
-            <tr class="propeties-line">
-              <td class="properties-title">Артикул: </td>
-              <td class="properties-value">1081164</td>
-            </tr>
-            <tr class="propeties-line">
-              <td class="properties-title">Цвет:</td>
-              <td class="properties-value">желтый, салатовый</td>
-            </tr>
-            <tr class="propeties-line">
-              <td class="properties-title">Состав: </td>
-              <td class="properties-value"пластик></td>
-            </tr>
-          </table>
-        </div> <!-- item-properties-wrap -->
+            <div class="sub-catalog-item">
+              <a href="" class="sub-catalog-item-url">Слюнявчики</a>
+            </div>
+            
+            <div class="sub-catalog-item">
+              <a href="" class="sub-catalog-item-url">Соски</a>
+            </div>
+            
+            <div class="sub-catalog-item">
+              <a href="" class="sub-catalog-item-url">Ползунки</a>
+            </div>
 
-        <div class="count-wrap cf">
-          <label for="" class="count-label fl">Количество </label>
-          <div class="quantity-wrap cf">
-            <input type="text" value="3" id="">
-          </div>  <!-- quantity-wrap -->
-          <div class="plus-minus fre">
-            <span class="plm plus"></span>
-            <span class="plm minus"></span>
-          </div> <!-- plus-minus -->
-        </div>  <!-- count-wrap -->
+          </nav>
+          </div>
+          <div class="catalog-item">
+          <a href="#" class="catalog-item-url">Для мальчиков</a>
+          </div>
+          <div class="catalog-item">
+          <a href="#" class="catalog-item-url">Для девочек</a>
+          </div>
+          <div class="catalog-item">
+          <a href="#" class="catalog-item-url">Для взрослых</a>
+          </div>
+          <div class="catalog-item">
+          <a href="#" class="catalog-item-url">Дополнительный сервис</a>
+          </div>
+          
+        </nav>
+      </div> <!-- sidebarbox -->
 
-        <div class="item-buyzone">
+      <div class="sidebarbox">
+       <h3 class="sidebarbox-title sidebarbox-title-in">
+        Материал
+        </h3>
+        <div class="catalog filter-wrap filters">
+          <a href="#" class="catalog-item-url">Кожа</a>
+          <a href="#" class="catalog-item-url">Дерево</a>
+          <a href="#" class="catalog-item-url active">Пластик</a>
+          <a href="#" class="catalog-item-url">Стекло</a>
+          <a href="#" class="catalog-item-url">Металл</a>
+          <a href="#" class="catalog-item-url">Бумага</a>
+        </div>
+
+        <h3 class="sidebarbox-title sidebarbox-title-in">
+        Цвет
+        </h3>
+        <div class="catalog filter-wrap filters">
+          <a href="#" class="catalog-item-url">Синий</a>
+          <a href="#" class="catalog-item-url">Красный</a>
+          <a href="#" class="catalog-item-url">Бело-голубой</a>
+          <a href="#" class="catalog-item-url active">Оранжевый</a>
+          <a href="#" class="catalog-item-url">Металл</a>
+          <a href="#" class="catalog-item-url">Фиолетовый</a>
+        </div>
+
+        <h3 class="sidebarbox-title sidebarbox-title-in">
+        Цена
+        </h3>
+        <div class="catalog filter-wrap filters price-filtering">
+            <div class="price-filter">
+              <div id="slider-range"></div>
+              <input type="hidden" name="price_min" id="min-price" value="100"/>
+              <input type="hidden" name="price_max" class="fr" id="max-price" value="5000" />
+              <div class="price-range cf"><span class="min-price fl"></span><span class="max-price fr"></span></div>
+            </div>
+        </div>
+
+
+          <script>
+          $(function() {                  
+          $( "#slider-range" ).slider({
+          range: true,
+          min: 100,
+                                    max: 5000,
+                                    values: [ 400, 6000 ],
+                                    slide: function( event, ui ) {
+          $('.min-price').text("от " + ui.values[ 0 ] + " р.");
+          $('.max-price').text(" до " + ui.values[ 1 ] + " р.");  
+          $('#min-price').val(ui.values[ 0 ]);
+          $('#max-price').val(ui.values[ 1 ]);       
+
+          },
+          stop: function( event, ui ) {
+            $('#characteristics').submit();
+          }
+          });
+
+          $('.min-price').text("от " + $( "#slider-range" ).slider( "values", 0 ) + " р.");
+          $('.max-price').text("  до " + $( "#slider-range" ).slider( "values", 1 ) + " р.");  
+          $('#min-price').val($( "#slider-range" ).slider( "values", 0 ));
+          $('#max-price').val($( "#slider-range" ).slider( "values", 1 ));          
+
+          });
+          </script> 
+
+
+      </div> <!-- sidebarbox -->
+    </div> <!-- sidebar -->
+
+    <section class="content fr">
+      <h1 class="section-title sidebatbox-title-in"></h1>
+
+      <div class="sorting-wrap cf">
+        <div class="sorting fl">
+          Сортировать по   
+          <select class="buttons sorting" onchange="$('#order_form').submit();" name="order">
+           
+            <option value="price">По возрастанию цены</option>
+            <option value="descending_price">По убыванию цены</option>
+            <option value="title">Алфавиту А-Я</option>
+            <option value="descending_title">Алфавиту Я-А</option>
+            <option value="age">Дате добавления Новые-Старые</option>
+            <option value="descending_age">Дате добавления Старые-Новые</option>
+        </select>
+        <script>
+          $(document).ready(function(){
+            $('select').selectik();
+            });
+        </script>
+        </div>  <!-- sorting -->
+
+        <div class="pagination fr">
+          <nav class="page-items">
+            <a href="#" class="page-part-url">1</a>
+            <a href="#" class="page-part-url active">2</a>
+            <a href="#" class="page-part-url">3</a>
+            <a href="#" class="page-part-url">4</a>
+            <a href="#" class="page-part-url">5</a>
+          </nav>
+        </div>
+      </div> <!-- sorting-wrap -->
+
+      <div class="grid-items">
+
+        <article class="grid-item">
+          <figure style="width:160px; height:160px; margin:0 auto;">
+            <a href="#" class="grid-item-url">
+              <img src="images/grid-image1.jpg" alt="" class="grid-item-img-url">
+            </a>
+          </figure>
+          <h1 class="grid-item-title">
+            <a href="#" class="grid-item-title-url">
+            Велобалансир-каталка 
+            INJUSA Rayo 196 red
+            </a>
+          </h1>
           <div class="pricezone">1200 руб</div> <!-- pricezone -->
           <div class="cartzone">
-            <button class="button buy">В Корзину</button>
-          </div> <!-- cartzone -->
-        </div> <!-- item-buyzone -->
+            <button class="button buy cartzone-button">В Корзину</button>
+          </div> <!-- cart-zone -->
+        </article>
+      
+        <article class="grid-item">
+          <figure style="width:160px; height:160px; margin:0 auto;">
+            <a href="#" class="grid-item-url">
+              <img src="images/grid-image2.jpg" alt="" class="grid-item-img-url">
+            </a>
+          </figure>
+          <h1 class="grid-item-title">
+            <a href="#" class="grid-item-title-url">
+            Видеоняня Summer 
+            Infant Slim&Secure 2,5
+            </a>
+          </h1>
+                   <div class="pricezone">1200 руб</div> <!-- pricezone -->
+          <div class="cartzone">
+            <button class="button buy cartzone-button">В Корзину</button>
+          </div> <!-- cart-zone -->
+        </article>
+      
+        <article class="grid-item">
+          <figure style="width:160px; height:160px; margin:0 auto;">
+            <a href="#" class="grid-item-url">
+              <img src="images/grid-image3.jpg" alt="" class="grid-item-img-url">
+            </a>
+          </figure>
+          <h1 class="grid-item-title">
+            <a href="#" class="grid-item-title-url">
+           Inglesina Espresso
+            </a>
+          </h1>
+                    <div class="pricezone">1200 руб</div> <!-- pricezone -->
+          <div class="cartzone">
+            <button class="button buy cartzone-button">В Корзину</button>
+          </div> <!-- cart-zone -->
+        </article>
+      
+        <article class="grid-item">
+          <figure style="width:160px; height:160px; margin:0 auto;">
+            <a href="#" class="grid-item-url">
+              <img src="images/grid-image4.jpg" alt="" class="grid-item-img-url">
+            </a>
+          </figure>
+          <h1 class="grid-item-title">
+            <a href="#" class="grid-item-title-url">
+            Горка Smoby KS
+            </a>
+          </h1>
+          <div class="pricezone">1200 руб</div> <!-- pricezone -->
+          <div class="cartzone">
+            <button class="button buy cartzone-button">В Корзину</button>
+          </div> <!-- cart-zone -->
+        </article>
+      
+        <article class="grid-item">
+          <figure style="width:160px; height:160px; margin:0 auto;">
+            <a href="#" class="grid-item-url">
+              <img src="images/grid-image1.jpg" alt="" class="grid-item-img-url">
+            </a>
+          </figure>
+          <h1 class="grid-item-title">
+            <a href="#" class="grid-item-title-url">
+            Велобалансир-каталка 
+            INJUSA Rayo 196 red
+            </a>
+          </h1>
+          <div class="pricezone">1200 руб</div> <!-- pricezone -->
+          <div class="cartzone">
+            <button class="button buy cartzone-button">В Корзину</button>
+          </div> <!-- cart-zone -->
+        </article>
+      
+        <article class="grid-item">
+          <figure style="width:160px; height:160px; margin:0 auto;">
+            <a href="#" class="grid-item-url">
+              <img src="images/grid-image2.jpg" alt="" class="grid-item-img-url">
+            </a>
+          </figure>
+          <h1 class="grid-item-title">
+            <a href="#" class="grid-item-title-url">
+            Видеоняня Summer 
+            Infant Slim&Secure 2,5
+            </a>
+          </h1>
+                   <div class="pricezone">1200 руб</div> <!-- pricezone -->
+          <div class="cartzone">
+            <button class="button buy cartzone-button">В Корзину</button>
+          </div> <!-- cart-zone -->
+        </article>
+      
+        <article class="grid-item">
+          <figure style="width:160px; height:160px; margin:0 auto;">
+            <a href="#" class="grid-item-url">
+              <img src="images/grid-image3.jpg" alt="" class="grid-item-img-url">
+            </a>
+          </figure>
+          <h1 class="grid-item-title">
+            <a href="#" class="grid-item-title-url">
+           Inglesina Espresso
+            </a>
+          </h1>
+                    <div class="pricezone">1200 руб</div> <!-- pricezone -->
+          <div class="cartzone">
+            <button class="button buy cartzone-button">В Корзину</button>
+          </div> <!-- cart-zone -->
+        </article>
+      
+        <article class="grid-item">
+          <figure style="width:160px; height:160px; margin:0 auto;">
+            <a href="#" class="grid-item-url">
+              <img src="images/grid-image4.jpg" alt="" class="grid-item-img-url">
+            </a>
+          </figure>
+          <h1 class="grid-item-title">
+            <a href="#" class="grid-item-title-url">
+            Горка Smoby KS
+            </a>
+          </h1>
+          <div class="pricezone">1200 руб</div> <!-- pricezone -->
+          <div class="cartzone">
+            <button class="button buy cartzone-button">В Корзину</button>
+          </div> <!-- cart-zone -->
+        </article>
+      </div> <!-- items-grid -->
 
-        <div class="item-other-images-wrap">
-          <div class="item-other-images">
-            <div class="item-other-images-car">
-              <a href="" class="item-other-image-url">
-                <img src="" alt="" class="item-other-img">
-              </a>
-            </div> <!-- item-other-images-car -->
-            <a href="#" class="next-prev-button other-prev other-next-prev" id="other-prev">Вперед</a>
-            <a href="#" class="next-prev-button other-prev other-next-prev" id="other-next">Назад</a>
-          </div> <!-- item-other-images -->
-        </div> <!-- item-other-images-wrap -->
-
-        <div class="item-description-wrap">
-          <div class="item-description editor">
-            <p>
-              Резиновый пупс "Майя-Папайя". Фруктовые пупсы уже завоевали всю Европу - теперь и российские девочки смогут по достоинству оценить этих трогательных ароматных малышей. Пупсы сделаны из мягкой резины: все части тела у них подвижные, благодаря чему они могут принимать разные положения и позы. Такую куколку можно брать с собой в ванну, купать и играть с ней в воде. Пупсики идеально подходят для путешествий. Особенность каждой куколки - это уникальный йогуртово-фруктовый аромат: малиновый, ананасовый, дынный, сливовый, яблочный, смородиновый. На шее у малышек есть большая пустышка с пластиковой цепочкой. Упакованы куколки в прозрачный стаканчик, напоминающий баночку из-под йогурта. Каждая куколка эксклюзивна - у нее очень обаятельное личико, 
-            </p>
-          </div> <!-- item-description / wrap -->
-        </div>  <!-- item-description-wrap -->
-      </section> <!-- item-info -->
+      <div class="sorting-wrap cf">
         
-      <div class="item-fig fl">
-        <div class="item-image-wrap">
-         <figure class="item-image-fig">
-          <a href="" class="item-img-url">
-            <img src="images/item-img.jpg" alt="item-title" class="item-img">
-          </a>
-         </figure>
-       </div> <!-- item-image-wrap -->
-         <section class="b-items">
-           <h2 class="b-item-title">К этому товару необходимо:</h2>
-           <div class="b-items-blocks malish">
-             <div class="b-block" id="b-blocks-car">
-                <a href="" class="b-item-url">
-                  <img src="" alt="" class="b-item-img">
-                </a>
-              </div>
-              <a href="#" class="b-next-prev next-prev-button b-prev" id="b-toprev">вперед</a>
-              <a href="#" class="b-next-prev next-prev-button b-next" id="b-tonext">назад</a>
-           </div> <!-- b-items-blocks -->
-         </section> <!-- b -items --> 
-      </div><!-- item-fig -->
-    </div> <!-- item-wrap -->
-    
-    <div class="see-also-wrap">
-      <h3 class="see-also-title"></h3>
-      <div class="see-also-blocks">
-        <div class="see-also-car">
-          <a href="" class="see-also-url">
-            <img src="" alt="" class="see-also-img">
-          </a>
-        </div> <!-- see-also-car -->
-      </div> <!-- see-also-blocks  -->
-      <a href="#" class="also-next-prev also-prev next-prev-button" id="also-prev">Вперед</a>
-      <a href="#" class="also-next-prev also-next next-prev-button" id="also-next">Назад</a>
-    </div> <!-- see-also-wrap -->
 
+        <div class="pagination fr">
+          <nav class="page-items">
+            <a href="#" class="page-part-url">1</a>
+            <a href="#" class="page-part-url active">2</a>
+            <a href="#" class="page-part-url">3</a>
+            <a href="#" class="page-part-url">4</a>
+            <a href="#" class="page-part-url">5</a>
+          </nav>
+        </div>
+      </div> <!-- sorting-wrap -->
+
+    </section> <!-- content -->
+    <div class="cf"></div>
   </div>  <!-- section-iiner -->
 </section>  <!-- section -->
 
