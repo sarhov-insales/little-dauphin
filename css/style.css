@@ -704,10 +704,9 @@ h1, h2, h3, h4, h5, h6{
 	position: relative;
 	border-bottom: 2px dotted #7F6A89;
 	border-top: 2px dotted #7F6A89;
+	margin-bottom: 40px;
 }
-.item-other-images{
 
-}
 .caroufredsel_wrapper{
 	display: block;
 	margin: 0 auto !important;
@@ -718,6 +717,10 @@ h1, h2, h3, h4, h5, h6{
 	height: 100px;
 	float: left;
 	margin: 0 3px;
+}
+
+.item-other-image-url:hover{
+	opacity: 0.7;
 }
 
 .next-prev-button{

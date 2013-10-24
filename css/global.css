@@ -214,3 +214,24 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
+.editor {
+  font-family: 'museo_sans_500', sans-serif;
+  color: #969595;
+  font-size: 15px;
+}
+
+.editor p{
+  margin: 3px 0;
+  line-height: 1.3;
+}
+
+.editor h1,
+.editor h2,
+.editor h3,
+.editor h4,
+.editor h5,
+.editor h6{
+  font-family: 'museo_cyrl700', serif;
+}
+
