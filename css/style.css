@@ -159,6 +159,17 @@ h1, h2, h3, h4, h5, h6{
 	cursor: pointer;
 }
 
+.breadcrumbs{
+	top: 145px;
+	left: 260px;
+}
+
+.bread-item{
+	font-family: 'museo_sans_cyrl700', sans-serif;
+	font-size: 13px;
+	vertical-align: middle;
+}
+
 /*END main header*/
 
 /*the cat blocks*/
@@ -564,3 +575,63 @@ h1, h2, h3, h4, h5, h6{
 	visibility: hidden;
 }
 
+
+
+
+
+
+/*popup*/
+
+.popik{
+	background: none repeat scroll 0 0 #DDDDDD;
+border: 3px solid #FFED78;
+border-radius: 20px 20px 20px 20px;
+bottom: 0;
+box-shadow: 0 0 2px #333333;
+height: 188px;
+left: 0;
+margin: auto;
+overflow: hidden;
+position: fixed;
+right: 0;
+top: 0;
+width: 300px;
+z-index: 9999;
+}
+
+.item-added-title {
+    background: none repeat scroll 0 0 #DDDDDD;
+    padding: 10px;
+    text-align: center;
+}
+
+.added-image {
+    background: none repeat scroll 0 0 #444444;
+    display: block;
+    float: left;
+    overflow: hidden;
+    width: 50%;
+}
+
+.added-buttons {
+    float: right;
+    width: 50%;
+}
+
+.added-button {
+    background: none repeat scroll 0 0 #FFED78;
+    border-top: 1px solid #FCFCFC;
+    display: block;
+    padding: 25px 0;
+    text-align: center;
+}
+
+.added-button:hover{
+	color: #fff;
+	background: #431B60;
+}
+
+.added-button:first-child{
+	border-top: none;
+	border-bottom: none;
+}
