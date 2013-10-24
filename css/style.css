@@ -684,7 +684,68 @@ h1, h2, h3, h4, h5, h6{
 	background: transparent url('../images/minus-bg.png') center center no-repeat;
 }
 
+.item-buyzone{
+	margin-bottom:30px ;
+}
 
+.item-pricezone{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.item-cartzone{
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 10px;
+}
+
+.item-other-images-wrap{
+	padding: 10px 40px;
+	position: relative;
+	border-bottom: 2px dotted #7F6A89;
+	border-top: 2px dotted #7F6A89;
+}
+.item-other-images{
+
+}
+.caroufredsel_wrapper{
+	display: block;
+	margin: 0 auto !important;
+}
+
+.item-other-image-url{
+	width: 100px;
+	height: 100px;
+	float: left;
+	margin: 0 3px;
+}
+
+.next-prev-button{
+ position: absolute;
+ width: 35px;
+ height: 35px;
+ top:50%;
+ margin-top: -12px;
+ display: block;
+ overflow: hidden;
+ text-indent: -9999px;
+ background: #9c0;
+}
+
+.next-prev-button:hover{
+	opacity: 0.7;
+}
+
+.next-prev-button.next{
+	right: 5px;
+	background: transparent url('../images/next-button.png') center center no-repeat;
+}
+
+
+.next-prev-button.prev{
+	left: 5px;
+	background: transparent url('../images/prev-button.png') center center no-repeat;
+}
 
 
 
@@ -694,19 +755,19 @@ h1, h2, h3, h4, h5, h6{
 
 .popik{
 	background: none repeat scroll 0 0 #DDDDDD;
-border: 3px solid #FFED78;
-border-radius: 20px 20px 20px 20px;
-bottom: 0;
-box-shadow: 0 0 2px #333333;
-height: 89px;
-left: 0;
-margin: auto;
-overflow: hidden;
-position: fixed;
-right: 0;
-top: 0;
-width: 300px;
-z-index: 9999;
+	border: 3px solid #FFED78;
+	border-radius: 20px 20px 20px 20px;
+	bottom: 0;
+	box-shadow: 0 0 2px #333333;
+	height: 89px;
+	left: 0;
+	margin: auto;
+	overflow: hidden;
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 300px;
+	z-index: 9999;
 }
 
 .item-added-title {

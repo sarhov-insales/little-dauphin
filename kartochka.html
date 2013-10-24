@@ -23,6 +23,7 @@
   <script src="js/libs/modernizr.min.js"></script>
   <script src="js/libs/jquery-ui.min.js"></script>
   <script src="js/libs/jquery.selectik.min.js"></script>
+    <script src="js/libs/carousel.js"></script>
 </head>
 <body class="rel">
 
@@ -123,22 +124,49 @@
         </div>  <!-- count-wrap -->
 
         <div class="item-buyzone">
-          <div class="pricezone">1200 руб</div> <!-- pricezone -->
-          <div class="cartzone">
+          <div class="pricezone item-pricezone">1200 руб</div> <!-- pricezone -->
+          <div class="item-cartzone">
             <button class="button buy">В Корзину</button>
           </div> <!-- cartzone -->
         </div> <!-- item-buyzone -->
 
-        <div class="item-other-images-wrap">
-          <div class="item-other-images">
+        <div class="item-other-images-wrap rel">
             <div class="item-other-images-car">
+
               <a href="" class="item-other-image-url">
-                <img src="" alt="" class="item-other-img">
+                <img src="images/thumb-img.jpg" alt="" class="item-other-img">
               </a>
+
+              <a href="" class="item-other-image-url">
+                <img src="images/thumb-img1.jpg" alt="" class="item-other-img">
+              </a>
+
+              <a href="" class="item-other-image-url">
+                <img src="images/thumb-img2.jpg" alt="" class="item-other-img">
+              </a>
+
+              <a href="" class="item-other-image-url">
+                <img src="images/thumb-img3.jpg" alt="" class="item-other-img">
+              </a>
+
+              <a href="" class="item-other-image-url">
+                <img src="images/thumb-img.jpg" alt="" class="item-other-img">
+              </a>
+
+              <a href="" class="item-other-image-url">
+                <img src="images/thumb-img1.jpg" alt="" class="item-other-img">
+              </a>
+
             </div> <!-- item-other-images-car -->
-            <a href="#" class="next-prev-button other-prev other-next-prev" id="other-prev">Вперед</a>
-            <a href="#" class="next-prev-button other-prev other-next-prev" id="other-next">Назад</a>
-          </div> <!-- item-other-images -->
+            <a href="#" class="next-prev-button prev other-next-prev" id="other-prev">Вперед</a>
+            <a href="#" class="next-prev-button next other-next-prev" id="other-next">Назад</a>
+                <script>
+        $(".item-other-images-car").carouFredSel({
+            auto : false,
+            prev : "#other-prev",
+            next : "#other-next"
+          });
+      </script>
         </div> <!-- item-other-images-wrap -->
 
         <div class="item-description-wrap">
@@ -175,15 +203,16 @@
     
     <div class="see-also-wrap cb">
       <h3 class="see-also-title">Посмотрите также</h3>
-      <div class="see-also-blocks">
+      <div class="see-also-blocks rel">
         <div class="see-also-car">
           <a href="" class="see-also-url">
             <img src="" alt="" class="see-also-img">
           </a>
         </div> <!-- see-also-car -->
-      </div> <!-- see-also-blocks  -->
-      <a href="#" class="also-next-prev also-prev next-prev-button" id="also-prev">Вперед</a>
+        <a href="#" class="also-next-prev also-prev next-prev-button" id="also-prev">Вперед</a>
       <a href="#" class="also-next-prev also-next next-prev-button" id="also-next">Назад</a>
+      </div> <!-- see-also-blocks  -->
+      
     </div> <!-- see-also-wrap -->
 
   </div>  <!-- section-iiner -->
