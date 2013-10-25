@@ -190,27 +190,59 @@
            <h2 class="b-item-title">К этому товару необходимо:</h2>
            <div class="b-items-blocks malish">
              <div class="b-block" id="b-blocks-car">
-                <a href="" class="b-item-url">
-                  <img src="" alt="" class="b-item-img">
+
+                <a href="" class="b-item-url" style="background: #fff url('images/thumb-img.jpg') center center no-repeat;">
                 </a>
+              
+                <a href="" class="b-item-url" style="background: #fff url('images/thumb-img1.jpg') center center no-repeat;">
+                </a>
+              
+                <a href="" class="b-item-url" style="background: #fff url('images/thumb-img2.jpg') center center no-repeat;">
+                </a>
+              
+                <a href="" class="b-item-url" style="background: #fff url('images/thumb-img3.jpg') center center no-repeat;">
+                </a>
+              
+                <a href="" class="b-item-url" style="background: #fff url('images/thumb-img1.jpg') center center no-repeat;">
+                </a>
+              
+                <a href="" class="b-item-url" style="background: #fff url('images/thumb-img2.jpg') center center no-repeat;">
+                </a>
+              
+                <a href="" class="b-item-url" style="background: #fff url('images/thumb-img3.jpg') center center no-repeat;">
+                </a>
+              
+                <a href="" class="b-item-url" style="background: #fff url('images/thumb-img1.jpg') center center no-repeat;">
+                </a>
+              
+                <a href="" class="b-item-url" style="background: #fff url('images/thumb-img2.jpg') center center no-repeat;">
+                </a>
+              
               </div>
               <a href="#" class="b-next-prev next-prev-button prev" id="b-toprev">вперед</a>
               <a href="#" class="b-next-prev next-prev-button next" id="b-tonext">назад</a>
            </div> <!-- b-items-blocks -->
+                           <script>
+        $("#b-blocks-car").carouFredSel({
+            auto : false,
+            prev : "#b-toprev",
+            next : "#b-tonext"
+          });
+      </script>
          </section> <!-- b -items --> 
       </div><!-- item-fig -->
     </div> <!-- item-wrap -->
     
     <div class="see-also-wrap cb">
-      <h3 class="see-also-title">Посмотрите также</h3>
+      <h3 class="see-also-title b-item-title">Посмотрите также</h3>
       <div class="see-also-blocks rel">
         <div class="see-also-car">
           <a href="" class="see-also-url">
             <img src="" alt="" class="see-also-img">
           </a>
         </div> <!-- see-also-car -->
-        <a href="#" class="also-next-prev also-prev next-prev-button" id="also-prev">Вперед</a>
-      <a href="#" class="also-next-prev also-next next-prev-button" id="also-next">Назад</a>
+        <a href="#" class="also-next-prev prev next-prev-button" id="also-prev">Вперед</a>
+      <a href="#" class="also-next-prev next next-prev-button" id="also-next">Назад</a>
       </div> <!-- see-also-blocks  -->
       
     </div> <!-- see-also-wrap -->
