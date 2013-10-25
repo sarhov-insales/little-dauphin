@@ -611,26 +611,29 @@ h1, h2, h3, h4, h5, h6{
 
 .round-loupe{
    border-radius: 75px;
-   border: 5px solid #F0F0F0;
+   border: 5px solid #E5E5E4;
+   -webkit-box-shadow:  0 0 3px #fff;
+   -moz-box-shadow:  0 0 3px #fff;
+   box-shadow:  0 0 3px #fff;
 }
 
 .mine-image {
-    background: none repeat scroll 0 0 #FFED78;
+    background:  url('../images/mine-image-bg.png') center center no-repeat #FFED78;
     bottom: 18px;
-    height: 50px;
+    height: 40px;
     left: 50%;
-    margin-left: -30px;
+    margin-left: -20px;
     overflow: hidden;
     text-align: left;
     text-indent: -9999px;
-    width: 50px;
+    width: 40px;
     -webkit-box-shadow: 0 0 0 2px #9DBC5F, 0 0 0 6px #E5E5E4;
     -moz-box-shadow: 0 0 0 2px #9DBC5F, 0 0 0 6px #E5E5E4;
     box-shadow: 0 0 0 2px #9DBC5F, 0 0 0 6px #E5E5E4;
     border-radius:50%;
 }
 
-.mine-image:hover{
+.mine-image:active{
     -webkit-box-shadow: 0 0 0 1px #9DBC5F, 0 0 0 6px #E5E5E4;
     -moz-box-shadow: 0 0 0 1px #9DBC5F, 0 0 0 6px #E5E5E4;
     box-shadow: 0 0 0 1px #9DBC5F, 0 0 0 6px #E5E5E4;
