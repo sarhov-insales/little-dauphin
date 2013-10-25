@@ -820,8 +820,9 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .b-items-blocks{
-	height: 110px;
+	height: 115px;
 	width: 95%;
+	position: relative;
 	margin:0 auto;
 	background: #D2BBE4 url('../images/bg-gl.png') 0 0 no-repeat;
 	border-radius:17px;
