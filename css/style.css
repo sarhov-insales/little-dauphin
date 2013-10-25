@@ -8,7 +8,7 @@ body{
 	 font-size: 100%;
 	 min-height: 100%;
 	 color: #62486e;
-	background: #d2bbe4 url('../images/bg-gl.png') 0 0 repeat;
+	background: #ddd url('../images/bg-gl.png') 0 0 repeat;
 	padding-bottom: 260px;
 }
 
@@ -842,7 +842,6 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .see-also-blocks{
-	border-bottom: 2px dotted #7F6A89;
     border-top: 2px dotted #7F6A89;
     margin-bottom: 40px;
     padding: 10px 40px;
@@ -853,5 +852,6 @@ h1, h2, h3, h4, h5, h6{
 	padding-bottom: 20px;
 	margin-bottom: 10px;
 	background: none;
-	height: 320px;
+	height: 255px;
+	width: 186px;
 }
