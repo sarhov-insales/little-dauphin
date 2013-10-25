@@ -615,7 +615,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .mine-image {
-    background: none repeat scroll 0 0 #9900CC;
+    background: none repeat scroll 0 0 #FFED78;
     bottom: 18px;
     height: 50px;
     left: 50%;
@@ -623,7 +623,17 @@ h1, h2, h3, h4, h5, h6{
     overflow: hidden;
     text-align: left;
     text-indent: -9999px;
-    width: 60px;
+    width: 50px;
+    -webkit-box-shadow: 0 0 0 2px #9DBC5F, 0 0 0 6px #E5E5E4;
+    -moz-box-shadow: 0 0 0 2px #9DBC5F, 0 0 0 6px #E5E5E4;
+    box-shadow: 0 0 0 2px #9DBC5F, 0 0 0 6px #E5E5E4;
+    border-radius:50%;
+}
+
+.mine-image:hover{
+    -webkit-box-shadow: 0 0 0 1px #9DBC5F, 0 0 0 6px #E5E5E4;
+    -moz-box-shadow: 0 0 0 1px #9DBC5F, 0 0 0 6px #E5E5E4;
+    box-shadow: 0 0 0 1px #9DBC5F, 0 0 0 6px #E5E5E4;
 }
 
 .item-info{

@@ -26,52 +26,52 @@ jQuery(document).ready(function ($) {
 
     // product page fancybox
 
-	$(".fancybox").fancybox({
-		prevEffect	: 'none',
-		nextEffect	: 'none',
-		helpers	: {
-			title	: {
-				type: 'outside'
-			},
-			thumbs	: {
-				width	: 50,
-				height	: 50
-			}
-		}
-	});
+    $(".fancybox").fancybox({
+        prevEffect: 'none',
+        nextEffect: 'none',
+        helpers: {
+            title: {
+                type: 'outside'
+            },
+            thumbs: {
+                width: 50,
+                height: 50
+            }
+        }
+    });
 
-      //вешаем плагин на контейнер-картинку
-        $(".my-foto-container").imagezoomsl({
-	  
-     innerzoommagnifier: true,
-      classmagnifier: window.external ? window.navigator.vendor === "Yandex" ? "" : "round-loupe" : "",
-      magnifierborder: "5px solid #F0F0F0",                               // fix для Opera, Safary, Yandex		  
-      zoomrange: [2, 8],
-      zoomstart: 2,
-      magnifiersize: [150, 150]			
-  });
+    //вешаем плагин на контейнер-картинку
+    $(".my-foto-container").imagezoomsl({
 
-	  
-      //клик по превью-картинке
-        $(".my-foto").click(function(){
+        innerzoommagnifier: true,
+        classmagnifier: window.external ? window.navigator.vendor === "Yandex" ? "" : "round-loupe" : "",
+        magnifierborder: "5px solid #F0F0F0", // fix для Opera, Safary, Yandex		  
+        zoomrange: [2, 8],
+        zoomstart: 2,
+        magnifiersize: [150, 150]
+    });
 
-           var that = this;
- $('.mine-image').attr("href",              $(that).attr("data-large"))  
-         //копируем атрибуты из превью-картинки в контейнер-картинку
-           $(".my-foto-container").fadeOut(600, function(){
 
-             $(this).attr("src",              $(that).attr("data-middle"))              // путь до small картинки
-                    .attr("data-large",       $(that).attr("data-large"))       // путь до big картинки
-					
-                    //дополнительные атрибуты, если есть
-                    //.attr("data-title",       $(that).attr("data-title"))       // заголовок подсказки
-                    //.attr("data-help",        $(that).attr("data-help"))        // текст подсказки    
-                    //.attr("data-text-bottom", $(that).attr("data-text-bottom")) // текст снизу картинки
-                    
-                    .fadeIn(1000);				
-           });
-         
-           return false;
-       });	 
+    //клик по превью-картинке
+    $(".my-foto").click(function () {
+
+        var that = this;
+        $('.mine-image').attr("href", $(that).attr("data-large"))
+        //копируем атрибуты из превью-картинки в контейнер-картинку
+        $(".my-foto-container").fadeOut(600, function () {
+
+            $(this).attr("src", $(that).attr("data-middle")) // путь до small картинки
+            .attr("data-large", $(that).attr("data-large")) // путь до big картинки
+
+            //дополнительные атрибуты, если есть
+            //.attr("data-title",       $(that).attr("data-title"))       // заголовок подсказки
+            //.attr("data-help",        $(that).attr("data-help"))        // текст подсказки    
+            //.attr("data-text-bottom", $(that).attr("data-text-bottom")) // текст снизу картинки
+
+            .fadeIn(1000);
+        });
+
+        return false;
+    });
 
 });
