@@ -589,6 +589,7 @@ h1, h2, h3, h4, h5, h6{
 
 .item-image-wrap{
 	width: 416px;
+	margin-bottom: 40px;
 	height: 492px;
 	padding: 10px 10px 30px;
 	background: #fff url('../images/item-image-bg.png') center top no-repeat;
@@ -814,4 +815,6 @@ h1, h2, h3, h4, h5, h6{
 .b-item-title{
 	color: #62486e;
 	font-size: 18px;
+	text-align: center;
+	margin-bottom: 15px;
 }
