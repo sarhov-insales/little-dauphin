@@ -24,6 +24,9 @@
   <script src="js/libs/jquery-ui.min.js"></script>
   <script src="js/libs/jquery.selectik.min.js"></script>
     <script src="js/libs/carousel.js"></script>
+    <script src="js/libs/jquery.fancybox.pack.js"></script>
+    <script src="js/libs/jquery.fancybox-thumbs.js"></script>
+    <script src="js/functions.js"></script>
 </head>
 <body class="rel">
 
@@ -133,7 +136,7 @@
         <div class="item-other-images-wrap rel">
             <div class="item-other-images-car">
 
-              <a href="" class="item-other-image-url">
+              <a href="http://static.adzerk.net/Advertisers/a61df59863ed44e59446d0b9bb805c56.jpg" class="item-other-image-url fancybox" rel="fancybox">
                 <img src="images/thumb-img.jpg" alt="" class="item-other-img">
               </a>
 
@@ -161,11 +164,8 @@
             <a href="#" class="next-prev-button prev other-next-prev" id="other-prev">Вперед</a>
             <a href="#" class="next-prev-button next other-next-prev" id="other-next">Назад</a>
                 <script>
-        $(".item-other-images-car").carouFredSel({
-            auto : false,
-            prev : "#other-prev",
-            next : "#other-next"
-          });
+
+
       </script>
         </div> <!-- item-other-images-wrap -->
 
@@ -181,7 +181,7 @@
       <div class="item-fig fl">
         <div class="item-image-wrap">
          <figure class="item-image-fig">
-          <a href="" class="item-img-url">
+          <a href="http://static.adzerk.net/Advertisers/a61df59863ed44e59446d0b9bb805c56.jpg" class="item-img-url fancybox" rel="fancybox"  rel="fancybox">
             <img src="images/item-img.jpg" alt="item-title" class="item-img">
           </a>
          </figure>
@@ -222,13 +222,6 @@
               <a href="#" class="b-next-prev next-prev-button prev" id="b-toprev">вперед</a>
               <a href="#" class="b-next-prev next-prev-button next" id="b-tonext">назад</a>
            </div> <!-- b-items-blocks -->
-                           <script>
-        $("#b-blocks-car").carouFredSel({
-            auto : false,
-            prev : "#b-toprev",
-            next : "#b-tonext"
-          });
-      </script>
          </section> <!-- b -items --> 
       </div><!-- item-fig -->
     </div> <!-- item-wrap -->
@@ -386,13 +379,6 @@
         <a href="#" class="also-next-prev prev next-prev-button" id="also-prev">Вперед</a>
       <a href="#" class="also-next-prev next next-prev-button" id="also-next">Назад</a>
       </div> <!-- see-also-blocks  -->
-                                 <script>
-        $(".see-also-car").carouFredSel({
-            auto : false,
-            prev : "#also-prev",
-            next : "#also-next"
-          });
-      </script>
     </div> <!-- see-also-wrap -->
 
   </div>  <!-- section-iiner -->
