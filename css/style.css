@@ -1145,12 +1145,18 @@ iframe, object, embed {
 
 .article{
 	max-height: 400px;
-	border:1px solid #444;
 	width: 48%;
 	display: inline-block;
 	clear: none;
 	margin: 5px 8px;
 	text-align: left;
+	position: relative;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	overflow: hidden;
+	height: 200px;
+	margin-bottom: 30px;
 }
 
 .article:nth-of-type(1):last-child{
@@ -1158,20 +1164,34 @@ iframe, object, embed {
 }
 
 .article-title{
-	float: right;
+	background: none repeat scroll 0 0 #DDDDDD;
+    padding: 4px;
+    text-align: center;
+    width: 100%;
+}
+
+.article-title-url{
+	font-family: 'museo_cyrl700',​sans-serif;
+	color: #62486E;
+	
 }
 
 .article-short-description{
 	clear: right;
+	margin: 10px;
+	overflow: hidden;
+	color: #969595;
+	font-size: 13px;
+	font-family: 'museo_sans_500', sans-serif;
+}
+
+.article-more{
+	right: -1px;
+	bottom:-1px;
+}
+
+.article-more a{
+	border-radius:15px 0 0 0;
 }
 
 
-.article:nth-last-child(3n):first-child:nth-child(3n), .article:nth-last-child(3n):first-child ~ :nth-child(3n) {
-  width: 98%;
-  height: 90px;
-}
-
-.article:nth-last-child(2n+1):first-child:not(:nth-last-child(3n)):nth-last-child(3), .article:nth-last-child(2n+1):first-child:not(:nth-last-child(3n)) ~ :nth-last-child(3) {
-  width: 98%;
-  height: 90px;
-}
