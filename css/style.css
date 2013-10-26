@@ -975,3 +975,45 @@ h1, h2, h3, h4, h5, h6{
 	height: 255px;
 	width: 186px;
 }
+
+.item-line{
+	border-top: 2px dotted #7F6A89;
+	padding: 20px 0;
+}
+
+.item-line-item{
+	display: inline-block;
+	vertical-align: middle;
+	width: 49%;
+}
+
+.item-line-right{
+	text-align: right;
+}
+
+.line-box{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.item-line-image{
+	width: 150px;
+	margin-right: 20px;
+}
+
+.item-line-title{
+	max-width: 190px;
+}
+
+.item-line-title-url{
+	color: #969595;
+	font-family: 'museo_sans_500', sans-serif;
+}
+
+.item-line-delete{
+	width: 20px;
+}
+
+.item-line-price{
+	margin: 0 20px 0 30px;
+}

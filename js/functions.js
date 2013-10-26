@@ -3,6 +3,7 @@ jQuery(document).ready(function ($) {
     // prodcut other images
 
     $(".item-other-images-car").carouFredSel({
+    	width : "100%",
         auto: false,
         prev: "#other-prev",
         next: "#other-next"
@@ -11,6 +12,7 @@ jQuery(document).ready(function ($) {
     // need products
 
     $("#b-blocks-car").carouFredSel({
+    	width : "100%",
         auto: false,
         prev: "#b-toprev",
         next: "#b-tonext"
@@ -19,6 +21,7 @@ jQuery(document).ready(function ($) {
     // see also
 
     $(".see-also-car").carouFredSel({
+    	width : "100%",
         auto: false,
         prev: "#also-prev",
         next: "#also-next"
@@ -27,6 +30,7 @@ jQuery(document).ready(function ($) {
     // product page fancybox
 
     $(".fancybox").fancybox({
+
         prevEffect: 'none',
         nextEffect: 'none',
         helpers: {
