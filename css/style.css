@@ -1057,4 +1057,73 @@ h1, h2, h3, h4, h5, h6{
 .item-wrap{
 	min-height: 500px;
 }
+.contact-page{
+	width: 50%;
+}
+
+.contact-map{
+	 border-radius: 15px 15px 15px 15px;
+    webkit-box-shadow: 0 0 0 2px #9DBC5F, 0 0 0 6px #E5E5E4;
+    -moz-box-shadow: 0 0 0 2px #9DBC5F, 0 0 0 6px #E5E5E4;
+    box-shadow: 0 0 0 2px #9DBC5F, 0 0 0 6px #E5E5E4;
+    padding: 20px;
+    width: 45%;
+}
+
+.send-mail{
+	margin-bottom: 15px;
+}
+
+.note{
+	margin: 10px;
+	clear: both;
+}
+
+.contact-page label{
+	display: block;
+	margin-bottom: 5px;
+}
+
+.contact-mail{
+	width: 70%;
+}
+
+.text-input-wrap input{
+	width: 100%;
+	background: none;
+	border: none;
+	font-family: 'museo_sans_500', sans-serif;
+	color: #969595;
+	font-size: 15px;
+}
+
+.text-input-wrap textarea{
+	width: 100%;
+	height: 200px;
+		font-family: 'museo_sans_500', sans-serif;
+	color: #969595;
+	font-size: 15px;
+	resize: none;
+	background: none;
+	border: none;
+}
+
+.contact-message{
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+.text-input-wrap{
+	background: none repeat scroll 0 0 #FFED78;
+    border-radius: 15px 15px 15px 15px;
+    display: inline-block;
+    margin-left: 5px;
+    padding: 5px 15px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+iframe, object, embed {
+        max-width: 100%;
+}
 
