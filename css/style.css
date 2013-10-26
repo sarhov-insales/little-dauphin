@@ -1200,4 +1200,30 @@ iframe, object, embed {
 
 }
 
+body.active .nav-content{
+	margin-right: -100%;
+}
 
+body.active .nav-mobile{
+	margin-left: 0;
+}
+
+.nav-content{
+	margin-left: 0;
+	width: 100%;
+}
+
+.nav-content, .nav-mobile, .nav-cart{
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.nav-mobile{
+	margin-left: -100%;
+	height: 800px;
+	background: #9c0;
+	width: 80%;
+}

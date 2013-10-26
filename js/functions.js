@@ -78,4 +78,10 @@ jQuery(document).ready(function ($) {
         return false;
     });
 
+
+    $('.js #open-nav-mobile').click(function (e) {
+		$('body').toggleClass('active');
+		e.preventDefault();
+    });
+
 });
