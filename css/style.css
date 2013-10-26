@@ -1127,3 +1127,37 @@ iframe, object, embed {
         max-width: 100%;
 }
 
+
+.blog-pagination{
+	text-align: center;
+	margin: 10px 0;
+	overflow: hidden;
+}
+
+.blog-pagination .page-items{
+	overflow: hidden;
+	display: inline-block;
+}
+
+.articles{
+	text-align: center;
+}
+
+.article{
+	max-height: 400px;
+	border:1px solid #444;
+	width: 48%;
+	display: inline-block;
+	clear: none;
+	margin: 5px 8px;
+	text-align: left;
+}
+
+
+.article:nth-last-child(3n):first-child:nth-child(3n), .article:nth-last-child(3n):first-child ~ :nth-child(3n) {
+  width: 98%;
+}
+
+.article:nth-last-child(2n+1):first-child:not(:nth-last-child(3n)):nth-last-child(3), .article:nth-last-child(2n+1):first-child:not(:nth-last-child(3n)) ~ :nth-last-child(3) {
+  width: 98%;
+}
