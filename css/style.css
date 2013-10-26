@@ -828,6 +828,9 @@ h1, h2, h3, h4, h5, h6{
 .caroufredsel_wrapper{
 	display: block;
 	margin: 0 auto !important;
+	-webkit-border-radius: 40px;
+	-moz-border-radius: 40px;
+	border-radius: 40px;
 }
 
 .item-other-image-url{
