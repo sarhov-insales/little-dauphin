@@ -1195,8 +1195,9 @@ iframe, object, embed {
 }
 
 
-.goto{
+.goto, .phone-mobile{
 	display: none;
+
 }
 
 
