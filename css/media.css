@@ -79,6 +79,8 @@
 
 	.article{
 		width: 70%;
+		height: auto;
+		margin: 0 auto 30px;
 	}
 
 	.section{
@@ -113,6 +115,10 @@
 		height: 50px;
 		background: #9671B1;
 		border-bottom: 1px solid #9671B1;
+		width: 100%;
+	}
+
+	.article{
 		width: 100%;
 	}
 
@@ -172,5 +178,28 @@
 
 	.top-menu{
 		display: none;
+	}
+}
+
+
+@media screen and (max-width:410px) {
+	.article-image {
+		float: none;
+		display: block;
+		text-align: center;
+	}
+
+	.article-more{
+		position: relative;
+		right: 0;
+		bottom: 0;
+		width: 100%;
+	}
+
+	.article-more a{
+		-webkit-border-radius: 0;
+		-moz-border-radius: 0;
+		border-radius: 0;
+		width: 100%;
 	}
 }
