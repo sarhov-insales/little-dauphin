@@ -137,6 +137,11 @@
 		background: transparent url('../images/menu.png') center  center no-repeat;
 	}
 
+	.page-title{
+		text-align: left;
+		text-indent: 5px;
+	}
+
 	.cat-wrapping{
 		display: none;
 	}
@@ -155,9 +160,9 @@
 
 	.site-name{
 		left: 50%;
-		top: 51px;
-		width: 85px;
-		margin-left: -42px;
+		top: 55px;
+		width: 100px;
+		margin-left: -50px;
 	}
 
 	.categories {
@@ -174,10 +179,7 @@
     display: inline-block;
 	}
 
-	.cart-wrap {
-    right: 4px;
-    top: 5px;
-	}
+	
 
 	.phone-wrap{
 		position: absolute;
@@ -195,19 +197,7 @@
 		display: none;
 	}
 
-	.search-submit{
-		height: 100%;
-		padding: 5px;
-		width: 20%;
-	}
-
-	.search-input-wrap.fl {
-    float: left;
-    height: 50px;
-    padding: 10px;
-    width: 80%;
-}
-
+	
 	.phone-url{
 	display: block;
     height: 100%;
@@ -222,18 +212,18 @@
 	}
 
 	.search-wrap.abs{
-		top: 50px;
+		top: 60px;
+		right: 10px;
+		border:1px solid #333;
+		padding: 3px 12px;
 	}
 
-	.search-submit{
-		position: absolute;
-		right: 0;
-	}
+	
 
 	 .categories, .cart-wrap{
 	   border-left: 1px solid #B7B2F7;
-    border-right: 1px solid #454545;
-    width: 50%;
+    	border-right: 1px solid #454545;
+    	width: 50%;
     
 	}
 
@@ -284,10 +274,7 @@
 		padding-bottom: 150px;
 	}
 
-	.phone-url{
-		font-size: 13px;
-		padding: 18px 5px;
-	}
+	
 }
 
 @media screen and (max-width:510px) {
