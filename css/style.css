@@ -617,12 +617,21 @@ h1, h2, h3, h4, h5, h6{
    box-shadow:  0 0 3px #fff;
 }
 
+.round-loupe:hover .item-fig img{
+	opacity: 0.7;
+}
+
 .mine-image {
     background:  url('../images/mine-image-bg.png') center center no-repeat #FFED78;
     bottom: 18px;
-    height: 40px;
-    left: 50%;
-    margin-left: -20px;
+     left: 50%; 
+        margin-left: -20px;
+    
+}
+
+.round-button, .fancybox-close, .fancybox-prev span, .fancybox-next span{
+	background-color:#FFED78 ;
+	height: 40px;
     overflow: hidden;
     text-align: left;
     text-indent: -9999px;
@@ -633,10 +642,88 @@ h1, h2, h3, h4, h5, h6{
     border-radius:50%;
 }
 
-.mine-image:active{
+.round-button:active, .fancybox-close:hover, .fancybox-prev span:active, .fancybox-next span:active{
     -webkit-box-shadow: 0 0 0 1px #9DBC5F, 0 0 0 6px #E5E5E4;
     -moz-box-shadow: 0 0 0 1px #9DBC5F, 0 0 0 6px #E5E5E4;
     box-shadow: 0 0 0 1px #9DBC5F, 0 0 0 6px #E5E5E4;
+}
+
+.fancybox-skin{
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	overflow: hidden !important;
+}
+
+.fancybox-title{
+	position: absolute;
+	left: -1px;
+	bottom: -1px;
+	padding: 5px 10px;
+	-webkit-border-radius:0  15px 0 15px;
+	-moz-border-radius:0  15px 0 15px;
+	border-radius:0  15px 0 15px;
+	background: #ddd;
+}
+
+.fancybox-close{
+	right: 10px;
+	top: 10px;
+	width: 24px;
+	height: 24px;
+	background: #FFED78 url('../images/fancybox-close-bg.png') center center no-repeat;
+}
+
+
+.fancybox-prev span{
+	background: #FFED78 url('../images/prev-button.png') 4px center;
+	width: 35px;
+	height: 35px;
+	-webkit-transition: all 0.7s;
+	-moz-transition: all 0.7s;
+	-ms-transition: all 0.7s;
+	-o-transition: all 0.7s;
+	transition: all 0.7s;
+}
+
+.fancybox-prev:hover span{
+	background-position: -34px  center;
+}
+
+.fancybox-next span{
+		background: #FFED78 url('../images/next-button.png') -6px center ;
+	width: 35px;
+	height: 35px;
+	-webkit-transition: all 0.7s;
+	-moz-transition: all 0.7s;
+	-ms-transition: all 0.7s;
+	-o-transition: all 0.7s;
+	transition: all 0.7s;
+}
+
+.fancybox-next:hover span{
+	background-position: 34px center ;
+}
+
+#fancybox-thumbs{
+	overflow: visible;
+}
+
+.fancybox-thumbs ul li, #fancybox-thumbs ul li.active{
+	border: none;
+}
+
+#fancybox-thumbs.bottom{
+	bottom: 10px;
+}
+
+#fancybox-thumbs ul li a{
+	   -webkit-box-shadow: 0 0 0 6px #E5E5E4;
+    -moz-box-shadow:  0 0 0 6px #E5E5E4;
+    box-shadow:  0 0 0 6px #E5E5E4;
+    border-radius:50%;
+    border: none;
+    background: none;
 }
 
 .item-info{
