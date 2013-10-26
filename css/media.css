@@ -142,7 +142,7 @@
 	}
 
 	.m-head{
-		padding: 0 50px 50px 0 ;
+		padding: 0  ;
 		height: 50px;
 		background: #9671B1;
 		border-bottom: 1px solid #9671B1;
@@ -154,9 +154,10 @@
 	}
 
 	.site-name{
-		left: 10px;
+		left: 50%;
 		top: 51px;
 		width: 85px;
+		margin-left: -42px;
 	}
 
 	.categories {
@@ -179,34 +180,17 @@
 	}
 
 	.phone-wrap{
-		float: right;
-		margin-right: 0;
-		width: 33.33%;
-		height: 50px;
-		background: #9671B1;
+		position: absolute;
+		top: 50px;
 	}
 
 	.breadcrumbs{
 		left: 110px;
 		top: 70px;
+		display: none;
 	}
 
-	.search-wrap.abs{
-		top: 0;
-		border:none;
-		padding: 0;
-		right: 0;
-		position: static;
-		float: right;
-		width: 33.33%;
-		height: 50px;
-		float: right;
-		background: #9671B1;
-		-webkit-border-radius: 0;
-		-moz-border-radius: 0;
-		border-radius: 0;
-	}
-
+	
 	.top-menu{
 		display: none;
 	}
@@ -238,7 +222,7 @@
 	}
 
 	.search-wrap.abs{
-		position: relative;
+		top: 50px;
 	}
 
 	.search-submit{
@@ -246,25 +230,27 @@
 		right: 0;
 	}
 
-	.search-wrap.abs,  .categories, .phone-wrap, .cart-wrap{
+	 .categories, .cart-wrap{
 	   border-left: 1px solid #B7B2F7;
     border-right: 1px solid #454545;
+    width: 50%;
     
 	}
 
-	.phone-wrap:hover, 
-	.cart-wrap:hover, 
-	.search-wrap:hover, 
+	
+	.cart-wrap:hover,  
 	.categories:hover {
 		background: #AB94BC;
 	}
 
 	.cart-wrap{
 	background-image: none;
-	width: 50px;
+
 	height: 50px;
 	right: 0;
 	top: 0;
+	float: right;
+	position: relative;
 	}
 
 	.cart{
