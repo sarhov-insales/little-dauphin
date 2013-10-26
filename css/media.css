@@ -1,7 +1,27 @@
-@media screen and (max-width:980px) {
+@media screen and (max-width:1060px) {
+	.m-head{
+		
+		padding-right: 61px;
+	}
+
+		.g-inner{
+		width: 980px;
+	}
+
+}
+
+
+
+
+
+@media screen and (max-width:990px) {
 
 	.g-inner{
 		width: 880px;
+	}
+
+	.article{
+		width: 45%;
 	}
 
 	.site-name{
@@ -9,7 +29,8 @@
 	}
 
 	.m-head{
-		padding-left: 160px;
+		padding-left: 150px;
+		padding-right: 55px;
 	}
 
 	.cat-blocks{
@@ -20,4 +41,136 @@
 		margin: 40px !important;
 	}
 
+	.section{
+		margin-top: 40px;
+	}
+
+	.breadcrumbs{
+		top: 107px;
+	}
+
+	.search-input-wrap{
+		width: 120px;
+	}
+
+	.search-wrap.abs {
+    height: 30px;
+    padding: 4px 12px;
+    top: 104px;
+    width: 161px;
+	}
+
+}
+
+@media screen and (max-width:890px) {
+	.g-inner{
+		width: 98%;
+	}
+
+	.site-name{
+		width: 100px;
+		top: 20px;
+	}
+
+	.m-head{
+		padding-left: 110px;
+		padding-right: 4px;
+	}
+
+	.article{
+		width: 70%;
+	}
+
+	.section{
+		margin-top: 20px;
+		border: none;
+	}
+
+	.breadcrumbs{
+		left: 95px;
+		top: 104px;
+	}
+
+	.top-menu{
+		margin-right: 50px;
+	}
+
+	.cart-wrap{
+		top: 10px;
+		right: 4px;
+	}
+
+	.categories{
+		padding-top: 20px;
+	}
+}
+
+
+@media screen and (max-width:790px) {
+
+	.m-head{
+		padding: 0 50px 50px 0 ;
+		height: 50px;
+		background: #9671B1;
+		border-bottom: 1px solid #9671B1;
+		width: 100%;
+	}
+
+	.site-name{
+		left: 10px;
+		top: 51px;
+		width: 85px;
+	}
+
+	.categories {
+    padding-top: 0;
+    width: 230px;
+    left: 0;
+    top: 0;
+  	position: relative;
+    overflow: hidden;
+    background: #9671B1;
+    height: 50px;
+    clear: none;
+    width: 33.3%;
+    display: inline-block;
+	}
+
+	.cart-wrap {
+    right: 4px;
+    top: 5px;
+	}
+
+	.phone-wrap{
+		float: right;
+		margin-right: 0;
+		width: 33.3%;
+		height: 50px;
+		background: #9671B1;
+	}
+
+	.breadcrumbs{
+		left: 110px;
+		top: 70px;
+	}
+
+	.search-wrap.abs{
+		top: 0;
+		border:none;
+		padding: 3px 12px;
+		right: 0;
+		position: static;
+		float: right;
+		width: 33.3%;
+		height: 50px;
+		float: right;
+		background: #9671B1;
+		-webkit-border-radius: 0;
+		-moz-border-radius: 0;
+		border-radius: 0;
+	}
+
+	.top-menu{
+		display: none;
+	}
 }

@@ -1195,3 +1195,8 @@ iframe, object, embed {
 }
 
 
+.goto{
+	display: none;
+}
+
+
