@@ -976,6 +976,10 @@ h1, h2, h3, h4, h5, h6{
 	width: 186px;
 }
 
+.cart-table{
+	padding-bottom: 30px;
+}
+
 .item-line{
 	border-top: 2px dotted #7F6A89;
 	padding: 20px 0;
@@ -1017,3 +1021,4 @@ h1, h2, h3, h4, h5, h6{
 .item-line-price{
 	margin: 0 20px 0 30px;
 }
+
