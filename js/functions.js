@@ -81,6 +81,7 @@ jQuery(document).ready(function ($) {
 
     $('.js #open-nav-mobile').click(function (e) {
 		$('.cat-wrapping').slideToggle();
+		$('.site-name, .categories').toggleClass('active');
 		e.preventDefault();
     });
 
