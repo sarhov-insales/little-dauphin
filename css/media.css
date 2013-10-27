@@ -21,6 +21,39 @@
 		padding-top: 20px;
 	}
 
+	.content{
+	width: 68%;
+}
+
+.sidebar{
+	width: 28%;
+}
+
+.grid-items {
+	text-align: center;
+}
+
+.grid-item{
+	float: none;
+	display: inline-block;
+}
+
+.cartzone{
+	display: block;
+}
+
+.cartzone-button{
+	top: 0;
+}
+
+.grid-item:hover > .pricezone {
+    visibility: visible;
+}
+
+.pricezone {
+    margin-bottom: 10px;
+}
+
 }
 
 
@@ -28,6 +61,14 @@
 
 
 @media screen and (max-width:990px) {
+
+		.content{
+	width: 70%;
+}
+
+.sidebar{
+	width: 27%;
+}
 
 	.g-inner{
 		width: 880px;
@@ -80,6 +121,30 @@
 }
 
 @media screen and (max-width:890px) {
+
+
+		.content{
+	width: 67%;
+}
+
+.sidebar{
+	width: 27%;
+}
+
+.sorting-wrap .pagination, .sorting-wrap .sorting{
+	display: block;
+	float: none;
+	width:70%%;
+	text-align: center;
+}
+
+.sorting-wrap .pagination{
+	margin-bottom: 20px;
+}
+
+.page-items{
+	display: inline-block;
+}
 	.g-inner{
 		width: 98%;
 	}
@@ -134,6 +199,19 @@
 	.cat-blocks{
 		margin-top: 70px;
 	}
+}
+
+@media screen and (max-width:890px) {
+
+
+		.content{
+	width: 64%;
+}
+
+.sidebar{
+	width: 36%;
+}
+
 }
 
 
@@ -371,6 +449,19 @@
 
 
 @media screen and (max-width:610px) {
+
+
+		.content{
+	width: 100%;
+}
+
+.sidebar{
+	width: 100%;
+}
+
+
+
+
 	.copyright{
 		display: block;
 		clear: both;
