@@ -1196,7 +1196,7 @@ iframe, object, embed {
 }
 
 
-.goto, .phone-mobile{
+.goto, .phone-mobile, .cart-count-text{
 	display: none;
 
 }
