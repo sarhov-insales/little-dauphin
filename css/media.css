@@ -5,7 +5,20 @@
 	}
 
 		.g-inner{
-		width: 980px;
+		width: 970px;
+	}
+
+	.site-name{
+		width: 140px;
+	}
+
+	.m-head{
+		padding-left: 140px;
+		padding-right: 55px;
+	}
+
+		.categories{
+		padding-top: 20px;
 	}
 
 }
@@ -149,10 +162,7 @@
 		background: transparent url('../images/menu.png') center  center no-repeat;
 	}
 
-	.page-title{
-		text-align: left;
-		text-indent: 5px;
-	}
+	
 
 	.cat-wrapping{
 		display: none ;
@@ -172,9 +182,10 @@
 
 	.site-name{
 		left: 50%;
-		top: 55px;
+		top: 30px;
 		width: 100px;
 		margin-left: -50px;
+		z-index: 9999;
 	}
 
 	.categories {
@@ -439,9 +450,12 @@
 
 
 
-	.site-name{
+		.site-name{
+		left: 50%;
 		top: 10px;
 		z-index: 9999;
+		width: 80px;
+		margin-left: -40px;
 	}
 
 	.cart-count-text{
@@ -462,7 +476,7 @@
 	}
 
 .section{
-	margin-top: 55px;
+	margin-top: 45px;
 }
 
 .page-title{
