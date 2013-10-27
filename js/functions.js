@@ -80,7 +80,7 @@ jQuery(document).ready(function ($) {
 
 
     $('.js #open-nav-mobile').click(function (e) {
-		$('body').toggleClass('active');
+		$('.cat-wrapping').slideToggle();
 		e.preventDefault();
     });
 
