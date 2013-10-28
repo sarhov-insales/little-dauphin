@@ -9,6 +9,15 @@ jQuery(document).ready(function ($) {
         next: "#other-next"
     });
 
+    // prodcut other images-mobile
+
+    $(".item-other-images-car-mobile").carouFredSel({
+    	width : "100%",
+        auto: false,
+        prev: "#other-prev-mobile",
+        next: "#other-next-mobile"
+    });
+
     // need products
 
     $("#b-blocks-car").carouFredSel({
@@ -52,7 +61,8 @@ jQuery(document).ready(function ($) {
         magnifierborder: "5px solid #F0F0F0", // fix для Opera, Safary, Yandex		  
         zoomrange: [2, 8],
         zoomstart: 2,
-        magnifiersize: [150, 150]
+        magnifiersize: [270, 270]
+        
     });
 
 
@@ -60,7 +70,8 @@ jQuery(document).ready(function ($) {
     $(".my-foto").click(function () {
 
         var that = this;
-        $('.mine-image').attr("href", $(that).attr("data-large"))
+       
+
         //копируем атрибуты из превью-картинки в контейнер-картинку
         $(".my-foto-container").fadeOut(600, function () {
 
